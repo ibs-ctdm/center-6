@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>วัดพระธรรมกายโทชิหงิ — เกี่ยวกับวัด</title>
+  <meta name="description" content="เกี่ยวกับวัดพระธรรมกายโทชิหงิ — เจ้าอาวาส รัตนอุโบสถหินโอยะ สถานที่ และกิจกรรม" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" />
+  <link rel="apple-touch-icon" href="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="วัดพระธรรมกายโทชิหงิ — เกี่ยวกับวัด" />
+  <meta property="og:description" content="เกี่ยวกับวัดพระธรรมกายโทชิหงิ — เจ้าอาวาส รัตนอุโบสถหินโอยะ สถานที่ และกิจกรรม" />
+  <meta property="og:image" content="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670113_260401_6_6_11.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="th_TH" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="วัดพระธรรมกายโทชิหงิ — เกี่ยวกับวัด" />
+  <meta name="twitter:description" content="เกี่ยวกับวัดพระธรรมกายโทชิหงิ" />
+  <meta name="twitter:image" content="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670113_260401_6_6_11.jpg" />
+  <meta name="theme-color" content="#6B7B8E" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    * { font-family: 'Sarabun', sans-serif; }
+    html { scroll-behavior: smooth; }
+
+    .navbar { background: rgba(78,45,45,0.95); backdrop-filter: blur(8px); }
+    .nav-link { color: #E0E7ED; transition: color 0.2s; }
+    .nav-link:hover { color: #DAA520; }
+    .nav-active { color: #DAA520; border-bottom: 2px solid #DAA520; }
+
+    /* Slideshow Hero */
+    .slideshow-hero { position: relative; min-height: 80vh; overflow: hidden; }
+    .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease; background-size: cover; background-position: center; }
+    .slide.active { opacity: 1; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(78,45,45,0.5) 0%, rgba(30,20,20,0.7) 100%); }
+    .hero-content { position: relative; z-index: 2; }
+
+    /* Section divider */
+    .section-divider { width: 64px; height: 4px; border-radius: 2px; background: linear-gradient(to right, #DAA520, #6B7B8E); margin: 0.75rem auto 0; }
+
+    /* Cards */
+    .warm-card { background: white; border-radius: 1.5rem; box-shadow: 0 4px 24px rgba(78,45,45,0.08); transition: box-shadow 0.2s, transform 0.2s; overflow: hidden; }
+    .warm-card:hover { box-shadow: 0 8px 32px rgba(78,45,45,0.13); transform: translateY(-3px); }
+
+    /* Timeline */
+    .timeline-item { position: relative; padding-left: 2.5rem; margin-bottom: 3rem; }
+    .timeline-item::before { content: ''; position: absolute; left: 0; top: 0.5rem; width: 1rem; height: 1rem; border-radius: 50%; background: #DAA520; box-shadow: 0 0 0 4px rgba(218,165,32,0.2); }
+    .timeline-item::after { content: ''; position: absolute; left: 0.45rem; top: 1.5rem; width: 2px; bottom: -2rem; background: linear-gradient(to bottom, #DAA520, rgba(218,165,32,0.1)); }
+    .timeline-item:last-child::after { display: none; }
+
+    /* Image grid */
+    .img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.5rem; }
+    .img-grid img { width: 100%; height: 120px; object-fit: cover; border-radius: 0.75rem; transition: transform 0.2s; }
+    .img-grid img:hover { transform: scale(1.04); }
+
+    /* Fade-in */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* Footer */
+    .footer { background: #4e2d2d; color: #E0E7ED; }
+    .footer a { color: #DAA520; transition: opacity 0.2s; }
+    .footer a:hover { opacity: 0.8; }
+
+    /* Slideshow dots */
+    .slide-dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: background 0.2s; }
+    .slide-dot.active { background: #DAA520; }
+  </style>
+</head>
+<body style="background:#FDF8F2; color:#4e2d2d;">
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar fixed top-0 left-0 right-0 z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png"
+           alt="Logo" class="h-12 w-auto" />
+      <div class="hidden sm:block">
+        <div class="text-sm font-bold text-yellow-400 leading-tight">วัดพระธรรมกายโทชิหงิ</div>
+        <div class="text-xs text-gray-300">タンマガーイ寺院栃木別院</div>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
+      <a href="index.html" class="nav-link">หน้าแรก</a>
+      <a href="about.html" class="nav-link nav-active pb-0.5">เกี่ยวกับวัด</a>
+      <a href="ordination.html" class="nav-link">สมัครบวช</a>
+    </div>
+    <button id="menuBtn" class="md:hidden text-white focus:outline-none">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-amber-900/95 border-t border-yellow-800">
+    <div class="flex flex-col px-4 py-3 gap-3 text-sm font-semibold">
+      <a href="index.html" class="nav-link">หน้าแรก</a>
+      <a href="about.html" class="nav-link nav-active">เกี่ยวกับวัด</a>
+      <a href="ordination.html" class="nav-link">สมัครบวช</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SLIDESHOW ===== -->
+<section class="slideshow-hero" style="padding-top: 60px;">
+  <div class="slide active" style="background-image: url('https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670113_260401_6_6_11.jpg');"></div>
+  <div class="slide" style="background-image: url('https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_11_6_12.jpg');"></div>
+  <div class="slide" style="background-image: url('https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/481975906_949168367413229_1111905412964778921_n_6_13.jpg');"></div>
+  <div class="slide" style="background-image: url('https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670113_260401_5_6_14.jpg');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content flex flex-col items-center justify-center min-h-inherit py-24 px-4 text-center" style="min-height:80vh;">
+    <span class="inline-block bg-yellow-500/20 border border-yellow-400/40 text-yellow-300 text-xs px-3 py-1 rounded-full tracking-widest mb-4">☸ เกี่ยวกับวัด</span>
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-3 leading-tight">เกี่ยวกับวัดพระธรรมกายโทชิหงิ</h1>
+    <p class="text-base md:text-lg text-gray-300 max-w-xl">รู้จักวัด เจ้าอาวาส รัตนอุโบสถ สถานที่ และกิจกรรมตลอดปี</p>
+    <!-- Dots -->
+    <div class="flex gap-2 mt-8" id="slideDots">
+      <div class="slide-dot active" onclick="goSlide(0)"></div>
+      <div class="slide-dot" onclick="goSlide(1)"></div>
+      <div class="slide-dot" onclick="goSlide(2)"></div>
+      <div class="slide-dot" onclick="goSlide(3)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 84: ABBOT ===== -->
+<section data-section-id="84" class="py-20 px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold" style="color:#4e2d2d;">เจ้าอาวาส</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="warm-card p-0 md:p-0 fade-in overflow-hidden">
+      <div class="flex flex-col md:flex-row">
+        <!-- Abbot photos -->
+        <div class="md:w-2/5 flex-shrink-0">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/91B3D754-AA31-4B5B-90C1-B9E30C2DC929_6_4.jpg"
+               alt="พระมหาพงศ์ศักดิ์ ฐานิโย" class="w-full h-72 md:h-full object-cover" />
+        </div>
+        <!-- Profile info -->
+        <div class="md:w-3/5 p-6 md:p-10">
+          <div class="text-xs font-bold tracking-widest uppercase mb-2" style="color:#6B7B8E;">เจ้าอาวาส</div>
+          <h3 class="text-2xl md:text-3xl font-bold mb-1" style="color:#4e2d2d;">พระมหาพงศ์ศักดิ์ ฐานิโย, Ph.D.</h3>
+          <div class="text-base font-medium mb-5" style="color:#DAA520;">เจ้าอาวาสวัดพระธรรมกายโทชิหงิ</div>
+          <div class="text-gray-700 leading-relaxed whitespace-pre-line text-sm md:text-base">
+ผู้นำทางจิตวิญญาณของวัดพระธรรมกายโทชิหงิ — พระนักวิชาการและพระนักเผยแผ่ ผู้มีประสบการณ์ในการสอนสมาธิและวิชาการด้านพุทธศาสตร์ ในสถาบันการศึกษาชั้นนำทั้งภายในและต่างประเทศ อาทิ จุฬาลงกรณ์มหาวิทยาลัย, Massachusetts Institute of Technology (MIT), Ryukoku University เป็นต้น
+
+ประวัติโดยย่อ
+พระมหาพงศ์ศักดิ์ ฐานิโย จบการศึกษาระดับ ปวช. จากวิทยาลัยเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ ก่อนจะตัดสินใจอุปสมบทเมื่อปี พ.ศ. 2540 หลังจากเข้าอบรมธรรมทายาทที่วัดพระธรรมกาย เกิดศรัทธาในพระพุทธศาสนาอย่างลึกซึ้ง จึงสละเส้นทางทางโลกเพื่อครองเพศสมณะ
+
+การศึกษาด้านพุทธศาสตร์ในประเทศญี่ปุ่น
+หลังอุปสมบทได้ประมาณ 3 ปี ท่านเดินทางไปศึกษาต่อที่ประเทศญี่ปุ่น โดยเรียนภาษาญี่ปุ่น 2 ปี แล้วจึงสอบเข้าศึกษาที่ Ryukoku University (龍谷大学) มหาวิทยาลัยชื่อเสียงด้านพุทธศาสตร์ที่เปิดสอนมาตั้งแต่ พ.ศ. 2182 (ค.ศ. 1639)
+• ปริญญาตรี (พ.ศ. 2548) — รางวัลวิทยานิพนธ์ยอดเยี่ยมอันดับ 1 หัวข้อ "ธัมมจักกัปปวัตนสูตร" (ภาษาญี่ปุ่น)
+• ปริญญาโท (พ.ศ. 2550) — รางวัลวิทยานิพนธ์ยอดเยี่ยมอันดับ 1 หัวข้อ "สมถวิปัสสนาในคัมภีร์พระสุตตันตปิฎกบาลี" (ภาษาญี่ปุ่น)
+• ปริญญาเอก (พ.ศ. 2553) — หัวข้อ "สมถวิปัสสนาในคัมภีร์ยุคต้นถึงอรรถกถา ฝ่ายเหนือและฝ่ายใต้" (ภาษาญี่ปุ่น)
+
+ผลงานด้านวิชาการและการเผยแผ่
+ในฐานะผู้เชี่ยวชาญด้านพระพุทธศาสนาเถรวาท ท่านได้รับเชิญเป็นอาจารย์พิเศษที่มหาวิทยาลัย 3 แห่ง 5 วิทยาเขตในญี่ปุ่น ได้แก่ Ryukoku University (龍谷大学) Bukkyo University (佛教大学) และ Doshisha University (同志社大学) ในวิชาพระพุทธศาสนาเถรวาท พระพุทธศาสนากับสังคมปัจจุบัน และพระพุทธศาสนาในเอเชีย มีนักศึกษาลงทะเบียนเรียนกว่า 1,000 คน อีกทั้งยังได้รับเชิญให้สอนวิชา "สมาธิ" ใน Massachusetts Institute of Technology หรือ MIT โดยได้รับทุนสนับสนุนจากคณะวิศวกรรมศาสตร์ของจากมหาวิทยาลัย
+          </div>
+        </div>
+      </div>
+      <!-- Additional abbot photos grid -->
+      <div class="p-6 md:px-10 pb-8">
+        <div class="warm-card p-6 mb-6" style="border-left: 5px solid #DAA520; background: linear-gradient(135deg, #FDF8F2, #fff);">
+          <div class="text-3xl text-yellow-400 mb-1">"</div>
+          <p class="text-lg font-medium italic" style="color:#4e2d2d;">
+            การเผยแผ่ที่ได้ผลดีในระยะยาว คือการเผยแผ่ผ่านทางการศึกษา เพราะสามารถเผยแผ่ได้ง่ายกว่าการชักชวนให้คนมานับถือศาสนาหรือเปลี่ยนความเชื่อ
+          </p>
+        </div>
+        <p class="text-gray-600 text-sm mb-4">ท่านเป็นผู้หนึ่งในการบุกเบิกสร้างวัดและเครือข่ายศูนย์ปฏิบัติธรรมในญี่ปุ่น วางรากฐานจากการ "วางทีม" และ "วางที่" ปัจจุบันมีวัดในประเทศญี่ปุ่นมากกว่า 10 แห่ง พร้อมศูนย์ปฏิบัติธรรมสำหรับชาวญี่ปุ่นโดยเฉพาะ โดยเริ่มจากการสอนสมาธิเป็นหลัก ซึ่งเป็นที่ต้องการอย่างมากในสังคมญี่ปุ่นปัจจุบัน</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/C10CF6DC-6C0D-4201-9E0A-307B4380E654_6_5.jpg" alt="เจ้าอาวาส 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/2DF99B27-A124-4F13-99A5-D621233B2B4E_6_6.jpg" alt="เจ้าอาวาส 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/08FBDF02-8E05-430A-B2B8-622337046B31_6_7.jpg" alt="เจ้าอาวาส 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DSC07536-253_6_8.jpg" alt="เจ้าอาวาส 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/4BD8FAEA-387F-414D-AAF4-F40024E80325_6_9.jpg" alt="เจ้าอาวาส 6" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 92: TIMELINE รัตนอุโบสถหินโอยะ ===== -->
+<section data-section-id="92" class="py-20 px-4" style="background:#E0E7ED;">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-14 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold" style="color:#4e2d2d;">รัตนอุโบสถหินโอยะ</h2>
+      <div class="section-divider"></div>
+      <p class="mt-4 text-gray-700 max-w-xl mx-auto">อุโบสถหลังแรกในญี่ปุ่นและเอเชีย — หมุดหมายสำคัญแห่งการเติบโตของพระพุทธศาสนาเถรวาทในญี่ปุ่น</p>
+    </div>
+    <div class="relative">
+
+      <!-- Item 1 -->
+      <div class="timeline-item fade-in">
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">รัตนอุโบสถหินโอยะ: อุโบสถหลังแรกในญี่ปุ่นและเอเชีย</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">หมุดหมายสำคัญแห่งการเติบโตของพระพุทธศาสนาเถรวาทในญี่ปุ่น — อุโบสถสร้างจากหินโอยะที่ขุดจากพื้นแผ่นดินญี่ปุ่น สะท้อนยุทธศาสตร์ "Local for Local" ที่ใช้วัสดุท้องถิ่นสร้างศาสนสถานท้องถิ่น</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_14_6_15.jpg" alt="รัตนอุโบสถ 1" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item fade-in">
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">เอกลักษณ์หินโอยะ (大谷石)</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">หินภูเขาไฟที่เกิดจากเถ้าภูเขาไฟทับถมกันนานกว่า 20 ล้านปี ขุดได้เฉพาะในเมืองโอยะ จังหวัดโทชิหงิ น้ำหนักเบา ทนไฟ ดูดซับความชื้น สวยงามเป็นเอกลักษณ์<br/><br/>การเลือกใช้หินโอยะเป็นยุทธศาสตร์เชิงวัฒนธรรม — "Cultural Indigenization" ที่ทำให้อุโบสถผูกพันกับแผ่นดินญี่ปุ่นอย่างแท้จริง</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/Ooyaishi_6_16.jpg" alt="หินโอยะ" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item fade-in">
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">นัยสำคัญทางพุทธศาสตร์</h3>
+        <p class="text-gray-700 leading-relaxed">อุโบสถถูกสถาปนาให้เป็น "อายตนนิพพาน" คือสถานที่ซึ่งเปิดทางสู่มรรคผลนิพพาน ภายในประดิษฐานพระประธาน พระบรมสารีริกธาตุ ดวงแก้วกายสิทธิ์นิมิตมงคลต้นสมบัติ (ลูกนิมิตเอกของอุโบสถ)</p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="timeline-item fade-in">
+        <div class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#6B7B8E;">24 มี.ค. 2567</div>
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">พิธียกยอดอุโบสถ</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">สัญลักษณ์ของความสำเร็จในการก่อสร้างโครงสร้างหลัก โดยพระเดชพระคุณพระพรหมดิลก (เอื้อน หาสธมฺโม ป.ธ.9) เจ้าอาวาสวัดสามพระยาวรวิหาร เป็นประธานฝ่ายสงฆ์ พร้อมด้วยคุณไพศาล ทวีชัยถาวร และคุณเสาวนี หิรัณยศิริ ประธานฝ่ายฆราวาส</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670324_-695_6_17.jpg" alt="ยกยอดอุโบสถ 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670324_-801_6_18.jpg" alt="ยกยอดอุโบสถ 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670324_-816_6_19.jpg" alt="ยกยอดอุโบสถ 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670324_-805_6_20.jpg" alt="ยกยอดอุโบสถ 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_0634_6_21.jpg" alt="ยกยอดอุโบสถ 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_0657_6_22.jpg" alt="ยกยอดอุโบสถ 6" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_0680_6_23.jpg" alt="ยกยอดอุโบสถ 7" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_0727_6_24.jpg" alt="ยกยอดอุโบสถ 8" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_0766_6_25.jpg" alt="ยกยอดอุโบสถ 9" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="timeline-item fade-in">
+        <div class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#6B7B8E;">16 มิ.ย. 2567</div>
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">พิธีฝังลูกนิมิตและผูกสีมา</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">วันประวัติศาสตร์ที่มีพิธีรับรองเขตอุโบสถอย่างเป็นทางการตามพุทธบัญญัติ คณะสงฆ์กว่า 150 รูป นำโดยพระเดชพระคุณพระพรหมวชิรปัญญาจารย์ (ทองดี สุรเตโช ป.ธ.9) เจ้าอาวาสวัดราชโอรสารามราชวรวิหาร พร้อมสาธุชนทั้งภายในและต่างประเทศกว่า 500 คน</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/6706016-928_6_26.jpg" alt="ผูกสีมา 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-677_6_27.jpg" alt="ผูกสีมา 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-728_6_29.jpg" alt="ผูกสีมา 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-684_6_30.jpg" alt="ผูกสีมา 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-721_6_31.jpg" alt="ผูกสีมา 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-669_6_32.jpg" alt="ผูกสีมา 6" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-1034_6_33.jpg" alt="ผูกสีมา 7" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-1017_6_34.jpg" alt="ผูกสีมา 8" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-1051_6_35.jpg" alt="ผูกสีมา 9" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-849_6_36.jpg" alt="ผูกสีมา 10" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-851_6_37.jpg" alt="ผูกสีมา 11" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-853_6_38.jpg" alt="ผูกสีมา 12" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-1045_6_39.jpg" alt="ผูกสีมา 13" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-990_6_40.jpg" alt="ผูกสีมา 14" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-998_6_41.jpg" alt="ผูกสีมา 15" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-1069_6_42.jpg" alt="ผูกสีมา 16" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/6706016-793_6_43.jpg" alt="ผูกสีมา 17" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/6706016-795_6_44.jpg" alt="ผูกสีมา 18" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/6706016-798_6_45.jpg" alt="ผูกสีมา 19" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/6706016-819_6_46.jpg" alt="ผูกสีมา 20" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/6706016-848_6_47.jpg" alt="ผูกสีมา 21" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670616_-1125_6_48.jpg" alt="ผูกสีมา 22" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="timeline-item fade-in">
+        <div class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#6B7B8E;">8-12 ส.ค. 2567</div>
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">ปฐมอุปสมบทสมโภชอุโบสถ</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">พิธีบรรพชาอุปสมบทหมู่ครั้งแรกในอุโบสถใหม่ นับเป็นประวัติศาสตร์หน้าใหม่ของพระพุทธศาสนาเถรวาทในญี่ปุ่น เมื่ออุโบสถที่สร้างจากหินแห่งแผ่นดินญี่ปุ่นกลายเป็นสถานที่ให้กำเนิดพระภิกษุรุ่นใหม่</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_084_6_50.jpg" alt="ปฐมอุปสมบท 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_183_6_51.jpg" alt="ปฐมอุปสมบท 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_184_6_52.jpg" alt="ปฐมอุปสมบท 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_202_6_53.jpg" alt="ปฐมอุปสมบท 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_143_6_58.jpg" alt="ปฐมอุปสมบท 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_144_6_59.jpg" alt="ปฐมอุปสมบท 6" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_090_6_60.jpg" alt="ปฐมอุปสมบท 7" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_074_6_61.jpg" alt="ปฐมอุปสมบท 8" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_082_6_62.jpg" alt="ปฐมอุปสมบท 9" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_081_6_63.jpg" alt="ปฐมอุปสมบท 10" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_204_6_64.jpg" alt="ปฐมอุปสมบท 11" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_236_6_65.jpg" alt="ปฐมอุปสมบท 12" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_254_6_66.jpg" alt="ปฐมอุปสมบท 13" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_251_6_67.jpg" alt="ปฐมอุปสมบท 14" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_280_6_68.jpg" alt="ปฐมอุปสมบท 15" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_285_6_69.jpg" alt="ปฐมอุปสมบท 16" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_297_6_70.jpg" alt="ปฐมอุปสมบท 17" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_293_6_71.jpg" alt="ปฐมอุปสมบท 18" loading="lazy" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 86: สถานที่ภายในวัด ===== -->
+<section data-section-id="86" class="py-20 px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold" style="color:#4e2d2d;">สถานที่ภายในวัด</h2>
+      <div class="section-divider"></div>
+      <p class="mt-3 text-gray-600">วัดตั้งอยู่บนที่ดินขนาด 6,000 ตารางเมตร ล้อมรอบด้วยธรรมชาติ</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Place 1: รัตนอุโบสถ -->
+      <div class="warm-card fade-in">
+        <div class="grid grid-cols-2 gap-1 p-2">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_15_6_72.jpg" alt="รัตนอุโบสถ 1" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670113_260401_7_6_121.jpg" alt="รัตนอุโบสถ 2" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670113_260401_2_6_122.jpg" alt="รัตนอุโบสถ 3" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_3_6_123.jpg" alt="รัตนอุโบสถ 4" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_5_6_124.jpg" alt="รัตนอุโบสถ 5" class="w-full h-28 object-cover rounded-xl col-span-2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_6_6_125.jpg" alt="รัตนอุโบสถ 6" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold mb-2" style="color:#4e2d2d;">🏛 รัตนอุโบสถหินโอยะ</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">ศาสนสถานหลักของวัด สร้างจากหินโอยะท้องถิ่น ใช้เป็นสถานที่ประกอบสังฆกรรม อุปสมบท และปฏิบัติธรรม ชั้นล่างเป็นห้องปฏิบัติธรรม และนิทรรศการพุทธประวัติอันงดงาม</p>
+        </div>
+      </div>
+
+      <!-- Place 2: Sabaimind -->
+      <div class="warm-card fade-in">
+        <div class="grid grid-cols-2 gap-1 p-2">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670113_260401_8_6_73.jpg" alt="Sabaimind 1" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/565389400_1125382856458445_2512973923789882324_n_6_74.jpg" alt="Sabaimind 2" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_6_6_75.jpg" alt="Sabaimind 3" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_3_6_76.jpg" alt="Sabaimind 4" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25681013_SabaiMind-55_6_77.jpg" alt="Sabaimind 5" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25681013_SabaiMind-125_6_78.jpg" alt="Sabaimind 6" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_7_6_79.jpg" alt="Sabaimind 7" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25681013_SabaiMind-1_6_80.jpg" alt="Sabaimind 8" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25681013_SabaiMind-8_6_81.jpg" alt="Sabaimind 9" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25681013_SabaiMind-12_6_82.jpg" alt="Sabaimind 10" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25681013_SabaiMind-121_6_83.jpg" alt="Sabaimind 11" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25681013_SabaiMind-120_6_84.jpg" alt="Sabaimind 12" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold mb-2" style="color:#4e2d2d;">🏠 อาคารบรรลุธรรม Sabaimind</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">สถานที่สำหรับศึกษาธรรมและปฏิบัติธรรม ออกแบบให้เรียบง่าย สร้างความรู้สึกผ่อนคลาย สบายๆ เอื้อต่อการปฏิบัติสมาธิสำหรับชาวไทย และชาวต่างชาติ</p>
+        </div>
+      </div>
+
+      <!-- Place 3: ธรรมชาติ -->
+      <div class="warm-card fade-in">
+        <div class="grid grid-cols-1 gap-1 p-2">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/481975906_949168367413229_1111905412964778921_n_6_85.jpg" alt="ธรรมชาติ 1" class="w-full h-48 object-cover rounded-xl" loading="lazy" />
+          <div class="grid grid-cols-2 gap-1">
+            <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/490705379_975758834754182_8593984890039767146_n_6_86.jpg" alt="ธรรมชาติ 2" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+            <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8725_6_87.jpg" alt="ธรรมชาติ 3" class="w-full h-28 object-cover rounded-xl" loading="lazy" />
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold mb-2" style="color:#4e2d2d;">🌿 บริเวณธรรมชาติรอบวัด</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">ธรรมชาติสวยงาม มีลำธารไหลผ่าน ต้นไม้ร่มรื่น เดินทางสะดวก ไม่ไกลจากชุมชน เหมาะแก่การเดินจงกรมและปฏิบัติธรรมท่ามกลางความสงบ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 87: กิจกรรมและงานบุญ ===== -->
+<section data-section-id="87" class="py-20 px-4" style="background: linear-gradient(to bottom, #FDF8F2, #E0E7ED);">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold" style="color:#4e2d2d;">กิจกรรมและงานบุญ</h2>
+      <div class="section-divider"></div>
+      <p class="mt-3 text-gray-600">กิจกรรมและงานบุญตลอดทั้งปีที่วัดพระธรรมกายโทชิหงิ</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Event 1 -->
+      <div class="warm-card p-5 fade-in">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-2xl">🌅</span>
+          <div>
+            <h3 class="text-lg font-bold" style="color:#4e2d2d;">กิจวัตรประจำวัน</h3>
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full" style="background:#DAA520; color:#4e2d2d;">ทุกวัน</span>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm mb-3 leading-relaxed">การสวดมนต์ทำวัตรเช้า-เย็น ปฏิบัติสมาธิภาวนา และบิณฑบาต</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/680710-07883_6_88.jpg" alt="กิจวัตร 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670815_-72_6_132.jpg" alt="กิจวัตร 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670815_-7_6_133.jpg" alt="กิจวัตร 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670815_-60_6_134.jpg" alt="กิจวัตร 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670815_-52_6_135.jpg" alt="กิจวัตร 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670815_-97_6_138.jpg" alt="กิจวัตร 6" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670815_-98_6_139.jpg" alt="กิจวัตร 7" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="warm-card p-5 fade-in">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-2xl">📿</span>
+          <div>
+            <h3 class="text-lg font-bold" style="color:#4e2d2d;">พิธีสวดทบทวนพระปาฏิโมกข์</h3>
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full" style="background:#DAA520; color:#4e2d2d;">ทุกกึ่งเดือน</span>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm mb-3 leading-relaxed">สวดทบทวนพระวินัย 227 ข้อต่อหน้าคณะสงฆ์ แสดงถึงความบริสุทธิ์ของหมู่สงฆ์</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/680710-07903_6_89.jpg" alt="ปาฏิโมกข์ 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/680710-07895_6_90.jpg" alt="ปาฏิโมกข์ 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670815_-18_6_140.jpg" alt="ปาฏิโมกข์ 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670815_-41_6_141.jpg" alt="ปาฏิโมกข์ 4" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="warm-card p-5 fade-in">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-2xl">🐦</span>
+          <div>
+            <h3 class="text-lg font-bold" style="color:#4e2d2d;">พิธีบูชาข้าวพระและปล่อยสัตว์</h3>
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full" style="background:#DAA520; color:#4e2d2d;">อาทิตย์ต้นเดือน</span>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm mb-3 leading-relaxed">ทำบุญตักบาตร ปล่อยสัตว์ ชาวไทยและชาวญี่ปุ่นมาร่วมกันอย่างอบอุ่น</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_24_6_97.jpg" alt="ปล่อยสัตว์ 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_7_6_98.jpg" alt="ปล่อยสัตว์ 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_27_6_99.jpg" alt="ปล่อยสัตว์ 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_5_6_100.jpg" alt="ปล่อยสัตว์ 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8654_6_101.jpg" alt="ปล่อยสัตว์ 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8672_6_102.jpg" alt="ปล่อยสัตว์ 6" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8704_6_103.jpg" alt="ปล่อยสัตว์ 7" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8806_6_104.jpg" alt="ปล่อยสัตว์ 8" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8786_6_105.jpg" alt="ปล่อยสัตว์ 9" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670812__2_240814_535_6_119.jpg" alt="ปล่อยสัตว์ 10" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670812__2_240814_577_6_120.jpg" alt="ปล่อยสัตว์ 11" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="warm-card p-5 fade-in">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-2xl">☸️</span>
+          <div>
+            <h3 class="text-lg font-bold" style="color:#4e2d2d;">กิจกรรมวันอาทิตย์</h3>
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full" style="background:#DAA520; color:#4e2d2d;">ทุกวันอาทิตย์</span>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm mb-3 leading-relaxed">ร่วมถวายภัตตาหาร ถวายสังฆทาน ปฏิบัติธรรม นั่งสมาธิ และฟังธรรมบรรยาย</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_1_6_108.jpg" alt="กิจกรรมอาทิตย์ 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_2_6_109.jpg" alt="กิจกรรมอาทิตย์ 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8085_6_113.jpg" alt="กิจกรรมอาทิตย์ 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8087_6_114.jpg" alt="กิจกรรมอาทิตย์ 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8089_6_115.jpg" alt="กิจกรรมอาทิตย์ 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8345_6_116.jpg" alt="กิจกรรมอาทิตย์ 6" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8834_6_117.jpg" alt="กิจกรรมอาทิตย์ 7" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670807_-33_6_118.jpg" alt="กิจกรรมอาทิตย์ 8" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670808____240814_5_6_145.jpg" alt="กิจกรรมอาทิตย์ 9" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Event 5 -->
+      <div class="warm-card p-5 fade-in">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-2xl">🌕</span>
+          <div>
+            <h3 class="text-lg font-bold" style="color:#4e2d2d;">วันสำคัญทางพระพุทธศาสนา</h3>
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full" style="background:#DAA520; color:#4e2d2d;">ตลอดปี</span>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm mb-3 leading-relaxed">วันมาฆบูชา วิสาขบูชา อาสาฬหบูชา เข้าพรรษา-ออกพรรษา และวันสำคัญทางศาสนา</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_69_260401_5_6_91.jpg" alt="วันสำคัญ 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_69_260401_11_6_92.jpg" alt="วันสำคัญ 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI7196_6_93.jpg" alt="วันสำคัญ 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/copy_6_94.jpg" alt="วันสำคัญ 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/_6_95.jpg" alt="วันสำคัญ 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_20250511202407_0094_D-Enhanced-NR_6_96.jpg" alt="วันสำคัญ 6" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DSC07408-175_6_106.jpg" alt="วันสำคัญ 7" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DSC01313-93_6_107.jpg" alt="วันสำคัญ 8" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Event 6 -->
+      <div class="warm-card p-5 fade-in">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-2xl">🙏</span>
+          <div>
+            <h3 class="text-lg font-bold" style="color:#4e2d2d;">พิธีบรรพชาอุปสมบท</h3>
+            <span class="text-xs font-medium px-2 py-0.5 rounded-full" style="background:#DAA520; color:#4e2d2d;">ประจำปี</span>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm mb-3 leading-relaxed">โครงการบรรพชาอุปสมบทหมู่ประจำปี หัวใจสำคัญของการสร้างศาสนทายาทชาวญี่ปุ่น ดำเนินต่อเนื่องมากว่า 7 ปี</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DSC08824_6_126.jpg" alt="บวช 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_2023812_230813_577_6_127.jpg" alt="บวช 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DSC08862_6_128.jpg" alt="บวช 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI5426_6_129.jpg" alt="บวช 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI5355_6_130.jpg" alt="บวช 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI5375_6_131.jpg" alt="บวช 6" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811__Final-8_6_136.jpg" alt="บวช 7" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/9-1-2048x1365-1_6_137.jpg" alt="บวช 8" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_234_6_142.jpg" alt="บวช 9" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_226_6_143.jpg" alt="บวช 10" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_379_6_144.jpg" alt="บวช 11" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Event 7: ใส่บาตรช่วงเช้า -->
+      <div class="warm-card p-5 fade-in md:col-span-2">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-2xl">🌸</span>
+          <div>
+            <h3 class="text-lg font-bold" style="color:#4e2d2d;">กิจกรรมใส่บาตรวันอาทิตย์ช่วงเช้าตรู่ในฤดูสบาย</h3>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm mb-3 leading-relaxed">สำหรับทุกวันอาทิตย์ช่วงเช้าตรู่ ในฤดูสบาย ที่ไม่ใช่ฤดูหนาว ฝนไม่ตก และไม่ตรงกับวันอาทิตย์ต้นเดือน ทางวัดได้จัดให้มีการบิณฑบาตที่สวนสาธารณะซาซานามิ (さざなみ公園) ใกล้สถานีรถไฟอุทสึโนมิยะ (JR宇都宮駅) เอื้อเฟื้อให้สาธุชนทั้งชาวไทยและชาวญี่ปุ่น ได้มีโอกาสใส่บาตรแด่คณะสงฆ์ (สอบถามวันเวลาได้ที่ 028-652-8701)</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948609_0_6_166.jpg" alt="ใส่บาตร 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948613_0_6_167.jpg" alt="ใส่บาตร 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948610_0_6_168.jpg" alt="ใส่บาตร 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948614_0_6_169.jpg" alt="ใส่บาตร 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948611_0_6_170.jpg" alt="ใส่บาตร 5" loading="lazy" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer pt-12 pb-6 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" alt="Logo" class="h-16 mb-3" />
+        <div class="text-lg font-bold text-yellow-400">วัดพระธรรมกายโทชิหงิ</div>
+        <div class="text-sm text-gray-300">タンマガーイ寺院栃木別院</div>
+        <div class="text-sm text-gray-400 mt-1">Wat Phra Dhammakaya Tochigi</div>
+      </div>
+      <div>
+        <h4 class="text-base font-bold text-yellow-400 mb-3">ติดต่อวัด</h4>
+        <div class="space-y-2 text-sm text-gray-300">
+          <div>📍 1068 Oya-machi, Utsunomiya-shi, Tochigi-ken, Japan 321-0345</div>
+          <div>📞 <a href="tel:+81286528701">(+81) 28-652-8701</a></div>
+          <div>✉️ <a href="mailto:dimc.tochigi2004@gmail.com">dimc.tochigi2004@gmail.com</a></div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-base font-bold text-yellow-400 mb-3">ช่องทางติดตาม</h4>
+        <div class="space-y-2 text-sm">
+          <div><a href="https://maps.app.goo.gl/R6XF6vDPd2WkYS9h6" target="_blank" rel="noopener">🗺 Google Maps</a></div>
+          <div><a href="https://www.youtube.com/@jeabmy123" target="_blank" rel="noopener">▶️ YouTube</a></div>
+          <div><a href="#" class="text-gray-400">📘 Facebook: วัดพระธรรมกายโทชิหงิ</a></div>
+        </div>
+        <div class="mt-4 text-sm font-medium">
+          <a href="index.html" class="mr-4">หน้าแรก</a>
+          <a href="about.html" class="mr-4">เกี่ยวกับวัด</a>
+          <a href="ordination.html">สมัครบวช</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-amber-900/50 pt-4 text-center text-xs text-gray-500">
+      © 2567 วัดพระธรรมกายโทชิหงิ — Wat Phra Dhammakaya Tochigi. สงวนลิขสิทธิ์.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+
+  // Slideshow
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.slide-dot');
+
+  function goSlide(n) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = n;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }
+
+  setInterval(() => {
+    goSlide((currentSlide + 1) % slides.length);
+  }, 4000);
+
+  // Fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.10 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
