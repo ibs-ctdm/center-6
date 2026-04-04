@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>วัดพระธรรมกายโทชิหงิ — สมัครบวช</title>
+  <meta name="description" content="โครงการบรรพชาอุปสมบทหมู่ ประจำปี พ.ศ. 2569 วัดพระธรรมกายโทชิหงิ ประเทศญี่ปุ่น" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" />
+  <link rel="apple-touch-icon" href="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="วัดพระธรรมกายโทชิหงิ — สมัครบวช" />
+  <meta property="og:description" content="โครงการบรรพชาอุปสมบทหมู่ ประจำปี พ.ศ. 2569 ณ วัดพระธรรมกายโทชิหงิ ประเทศญี่ปุ่น" />
+  <meta property="og:image" content="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_084_6_147.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="th_TH" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="วัดพระธรรมกายโทชิหงิ — สมัครบวช" />
+  <meta name="twitter:description" content="โครงการบรรพชาอุปสมบทหมู่ ประจำปี พ.ศ. 2569" />
+  <meta name="twitter:image" content="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_084_6_147.jpg" />
+  <meta name="theme-color" content="#6B7B8E" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    * { font-family: 'Sarabun', sans-serif; }
+    html { scroll-behavior: smooth; }
+
+    .navbar { background: rgba(78,45,45,0.95); backdrop-filter: blur(8px); }
+    .nav-link { color: #E0E7ED; transition: color 0.2s; }
+    .nav-link:hover { color: #DAA520; }
+    .nav-active { color: #DAA520; border-bottom: 2px solid #DAA520; }
+
+    .hero-section {
+      position: relative; min-height: 70vh;
+      background-image: url('https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_084_6_147.jpg');
+      background-size: cover; background-position: center;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(78,45,45,0.55), rgba(30,20,20,0.78)); }
+    .hero-content { position: relative; z-index: 1; text-align: center; padding: 2rem; }
+
+    .section-divider { width: 64px; height: 4px; border-radius: 2px; background: linear-gradient(to right, #DAA520, #6B7B8E); margin: 0.75rem auto 0; }
+    .warm-card { background: white; border-radius: 1.5rem; box-shadow: 0 4px 24px rgba(78,45,45,0.08); transition: box-shadow 0.2s, transform 0.2s; overflow: hidden; }
+    .warm-card:hover { box-shadow: 0 8px 32px rgba(78,45,45,0.12); }
+
+    .img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; }
+    .img-grid img { width: 100%; height: 120px; object-fit: cover; border-radius: 0.75rem; transition: transform 0.2s; }
+    .img-grid img:hover { transform: scale(1.04); }
+
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    .btn-gold { background: #DAA520; color: #4e2d2d; padding: 0.85rem 2.5rem; border-radius: 9999px; font-weight: 700; font-size: 1.05rem; transition: background 0.2s, transform 0.2s; display: inline-block; }
+    .btn-gold:hover { background: #c49318; transform: translateY(-2px); }
+
+    .schedule-item { display: flex; gap: 1rem; padding: 0.75rem 0; border-bottom: 1px solid rgba(224,231,237,0.7); }
+    .schedule-item:last-child { border-bottom: none; }
+
+    .footer { background: #4e2d2d; color: #E0E7ED; }
+    .footer a { color: #DAA520; transition: opacity 0.2s; }
+    .footer a:hover { opacity: 0.8; }
+  </style>
+</head>
+<body style="background:#FDF8F2; color:#4e2d2d;">
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar fixed top-0 left-0 right-0 z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png"
+           alt="Logo" class="h-12 w-auto" />
+      <div class="hidden sm:block">
+        <div class="text-sm font-bold text-yellow-400 leading-tight">วัดพระธรรมกายโทชิหงิ</div>
+        <div class="text-xs text-gray-300">タンマガーイ寺院栃木別院</div>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
+      <a href="index.html" class="nav-link">หน้าแรก</a>
+      <a href="about.html" class="nav-link">เกี่ยวกับวัด</a>
+      <a href="ordination.html" class="nav-link nav-active pb-0.5">สมัครบวช</a>
+    </div>
+    <button id="menuBtn" class="md:hidden text-white focus:outline-none">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden bg-amber-900/95 border-t border-yellow-800">
+    <div class="flex flex-col px-4 py-3 gap-3 text-sm font-semibold">
+      <a href="index.html" class="nav-link">หน้าแรก</a>
+      <a href="about.html" class="nav-link">เกี่ยวกับวัด</a>
+      <a href="ordination.html" class="nav-link nav-active">สมัครบวช</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero-section" style="padding-top:60px;">
+  <div class="hero-overlay"></div>
+  <div class="hero-content max-w-3xl mx-auto">
+    <span class="inline-block bg-yellow-500/20 border border-yellow-400/40 text-yellow-300 text-xs px-3 py-1 rounded-full tracking-widest mb-4">🙏 บรรพชาอุปสมบท</span>
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-3 leading-tight">โครงการบรรพชาอุปสมบทหมู่</h1>
+    <p class="text-lg md:text-xl text-yellow-300 font-medium mb-2">ประจำปี พ.ศ. 2569</p>
+    <p class="text-gray-300 text-base max-w-xl mx-auto">ครั้งหนึ่งในชีวิตลูกผู้ชาย ได้บรรพชาอุปสมบทหมู่ บูชาธรรม 82 ปีหลวงพ่อธัมมชโย</p>
+    <div class="mt-8">
+      <a href="https://forms.gle/kcqNBNKBXpbP4HNY9" target="_blank" rel="noopener" class="btn-gold">📝 สมัครออนไลน์</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 88: โครงการบวช ===== -->
+<section data-section-id="88" class="py-20 px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold" style="color:#4e2d2d;">โครงการบรรพชาอุปสมบทหมู่ ประจำปี พ.ศ. 2569</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <!-- Goal banner -->
+    <div class="warm-card p-6 mb-8 fade-in" style="background: linear-gradient(135deg, #4e2d2d, #6B7B8E); color:white;">
+      <div class="text-center">
+        <div class="text-4xl mb-3">☸️</div>
+        <p class="text-lg font-semibold mb-2">ภารกิจสร้างศาสนทายาทที่ดำเนินมาตั้งแต่ปี พ.ศ. 2561-2568</p>
+        <p class="text-yellow-300 text-xl font-bold">มีผู้ผ่านการบรรพชาอุปสมบทแล้วกว่า 150 รูป</p>
+        <p class="text-gray-200 mt-3">ครั้งหนึ่งในชีวิตลูกผู้ชาย ได้บรรพชาอุปสมบทหมู่ บูชาธรรม 82 ปีหลวงพ่อธัมมชโย</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Schedule -->
+      <div class="warm-card p-6 fade-in">
+        <h3 class="text-xl font-bold mb-4 flex items-center gap-2" style="color:#4e2d2d;">
+          📅 กำหนดการฝึกอบรม (ปีที่ 7)
+        </h3>
+        <div>
+          <div class="schedule-item">
+            <div class="font-bold min-w-28 text-sm" style="color:#DAA520;">29 เม.ย.</div>
+            <div class="text-sm text-gray-700">รายงานตัว (วัดพระธรรมกายทุกแห่งในญี่ปุ่น)</div>
+          </div>
+          <div class="schedule-item">
+            <div class="font-bold min-w-28 text-sm" style="color:#DAA520;">30 เม.ย.</div>
+            <div class="text-sm text-gray-700">พิธีปลงผม ขอขมา รับผ้าไตรและบาตร</div>
+          </div>
+          <div class="schedule-item">
+            <div class="font-bold min-w-28 text-sm" style="color:#DAA520;">1 พ.ค.</div>
+            <div class="text-sm text-gray-700">ซักซ้อมพิธีบรรพชาอุปสมบท ณ วัดพระธรรมกายโทชิหงิ</div>
+          </div>
+          <div class="schedule-item">
+            <div class="font-bold min-w-28 text-sm" style="color:#DAA520;">2 พ.ค.</div>
+            <div class="text-sm text-gray-700">พิธีเวียนประทักษิณ พิธีบรรพชาอุปสมบท ณ พัทธสีมา</div>
+          </div>
+          <div class="schedule-item">
+            <div class="font-bold min-w-28 text-sm" style="color:#DAA520;">3-10 พ.ค.</div>
+            <div class="text-sm text-gray-700">ปฏิบัติธรรมและอบรม</div>
+          </div>
+        </div>
+        <div class="mt-4 p-3 rounded-xl text-sm text-center font-semibold" style="background:#FDF8F2; color:#4e2d2d;">
+          ⏰ รับสมัครถึงวันจันทร์ที่ <strong>20 เมษายน พ.ศ. 2569</strong>
+        </div>
+      </div>
+
+      <!-- Qualifications -->
+      <div class="warm-card p-6 fade-in">
+        <h3 class="text-xl font-bold mb-4 flex items-center gap-2" style="color:#4e2d2d;">
+          ✅ คุณสมบัติผู้สมัคร
+        </h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-yellow-500 flex-shrink-0">•</span><span>ชายแท้ อายุ 20 ปีขึ้นไป (บวชพระ) หรือ 7 ปีขึ้นไป (บวชสามเณร)</span></li>
+          <li class="flex gap-2"><span class="text-yellow-500 flex-shrink-0">•</span><span>ใช้ภาษาไทยหรือภาษาญี่ปุ่นได้</span></li>
+          <li class="flex gap-2"><span class="text-yellow-500 flex-shrink-0">•</span><span>สุขภาพแข็งแรง ไม่เป็นโรคติดต่อ</span></li>
+          <li class="flex gap-2"><span class="text-yellow-500 flex-shrink-0">•</span><span>ไม่ข้องเกี่ยวกับยาเสพติด</span></li>
+          <li class="flex gap-2"><span class="text-yellow-500 flex-shrink-0">•</span><span>ท่องคำขานนาคและคำขอบวชได้</span></li>
+        </ul>
+        <h3 class="text-xl font-bold mt-6 mb-4 flex items-center gap-2" style="color:#4e2d2d;">
+          🎒 สิ่งที่ต้องเตรียม
+        </h3>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-yellow-500 flex-shrink-0">•</span><span>เสื้อธรรมทายาท สีขาว 2 ตัว</span></li>
+          <li class="flex gap-2"><span class="text-yellow-500 flex-shrink-0">•</span><span>กางเกงธรรมทายาท สีขาว 2 ตัว</span></li>
+          <li class="flex gap-2"><span class="text-yellow-500 flex-shrink-0">•</span><span>เสื้อพระราชทาน สีขาว 1 ตัว</span></li>
+          <li class="flex gap-2"><span class="text-yellow-500 flex-shrink-0">•</span><span>อุปกรณ์ส่วนตัว</span></li>
+        </ul>
+        <div class="mt-5 p-4 rounded-xl text-sm" style="background:#E0E7ED;">
+          <p class="font-semibold mb-2" style="color:#4e2d2d;">📞 ติดต่อสอบถาม</p>
+          <p>น้องกาว — Line ID: <strong>ppkaw075</strong></p>
+          <p>น้องปัทม์ — Line ID: <strong>ampatt</strong></p>
+          <p>โทรศัพท์: <a href="tel:+81286528701" style="color:#6B7B8E; font-weight:600;">(+81) 28-652-8701</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA + Registration info -->
+    <div class="text-center mt-10 fade-in">
+      <p class="text-gray-600 mb-2">สมัคร Online หรือสมัครด้วยตนเองได้ที่วัดพระธรรมกายทุกแห่งในประเทศญี่ปุ่น</p>
+      <a href="https://forms.gle/kcqNBNKBXpbP4HNY9" target="_blank" rel="noopener" class="btn-gold">📝 สมัครออนไลน์ทันที</a>
+    </div>
+
+    <!-- Photo gallery -->
+    <div class="mt-12 fade-in">
+      <h3 class="text-xl font-bold mb-4 text-center" style="color:#4e2d2d;">ภาพบรรยากาศโครงการบวช</h3>
+      <div class="img-grid" style="grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));">
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_084_6_146.jpg" alt="บวช 1" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_225_6_148.jpg" alt="บวช 2" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_236_6_149.jpg" alt="บวช 3" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_253_6_150.jpg" alt="บวช 4" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_282_6_151.jpg" alt="บวช 5" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_297_6_152.jpg" alt="บวช 6" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_369_6_153.jpg" alt="บวช 7" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_412_6_154.jpg" alt="บวช 8" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_442_6_155.jpg" alt="บวช 9" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_447_6_156.jpg" alt="บวช 10" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_497_6_157.jpg" alt="บวช 11" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_590_6_158.jpg" alt="บวช 12" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_597_6_159.jpg" alt="บวช 13" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_601_6_160.jpg" alt="บวช 14" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_602_6_161.jpg" alt="บวช 15" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_668_6_163.jpg" alt="บวช 16" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_702_6_164.jpg" alt="บวช 17" loading="lazy" />
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/25670811-12_80_623_6_165.jpg" alt="บวช 18" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 89: ร่วมสนับสนุนเจ้าภาพงานบวช ===== -->
+<section data-section-id="89" class="py-16 px-4" style="background:#E0E7ED;">
+  <div class="max-w-xl mx-auto">
+    <div class="text-center mb-8 fade-in">
+      <h2 class="text-2xl md:text-3xl font-bold" style="color:#4e2d2d;">ร่วมสนับสนุนเป็นเจ้าภาพงานบวช</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="warm-card p-8 fade-in text-center">
+      <div class="text-4xl mb-4">🏦</div>
+      <p class="text-gray-600 mb-6 leading-relaxed">ร่วมเป็นเจ้าภาพโครงการบรรพชาอุปสมบทหมู่ ประจำปี พ.ศ. 2569 ณ วัดพระธรรมกายโทชิหงิ</p>
+      <div class="text-left bg-gray-50 rounded-2xl p-5 space-y-3 text-sm">
+        <div class="flex items-center gap-3">
+          <span class="text-xl">🏦</span>
+          <div>
+            <div class="text-xs text-gray-500">ธนาคาร</div>
+            <div class="font-semibold" style="color:#4e2d2d;">ออมสิน (สาขาคลองหลวง)</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-xl">👤</span>
+          <div>
+            <div class="text-xs text-gray-500">ชื่อบัญชี</div>
+            <div class="font-semibold" style="color:#4e2d2d;">Wat Phra Dhammakaya Tochigi</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-xl">🔢</span>
+          <div>
+            <div class="text-xs text-gray-500">เลขที่บัญชี</div>
+            <div class="font-bold text-lg" style="color:#4e2d2d;">020-4-79246-363</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 90: ติดต่อสอบถาม ===== -->
+<section data-section-id="90" class="py-16 px-4">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-10 fade-in">
+      <h2 class="text-2xl md:text-3xl font-bold" style="color:#4e2d2d;">ติดต่อสอบถาม</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Contact info -->
+      <div class="warm-card p-6 fade-in">
+        <h3 class="text-lg font-bold mb-4" style="color:#4e2d2d;">📍 ที่อยู่</h3>
+        <div class="text-sm text-gray-700 leading-loose whitespace-pre-line">タンマガーイ寺院栃木別院
+〒321-0345 栃木県宇都宮市大谷町 1068
+
+Wat Phra Dhammakaya Tochigi
+1068 Oya-machi, Utsunomiya-shi, Tochigi-ken, Japan 321-0345
+
+การเดินทาง: ประมาณ 20 นาทีจากสถานี JR Utsunomiya โดยรถยนต์</div>
+
+        <div class="mt-5 space-y-3">
+          <div class="flex items-center gap-2 text-sm">
+            <span class="text-xl">📞</span>
+            <a href="tel:+81286528701" class="font-semibold" style="color:#6B7B8E;">(+81) 28-652-8701</a>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <span class="text-xl">✉️</span>
+            <a href="mailto:dimc.tochigi2004@gmail.com" style="color:#6B7B8E;">dimc.tochigi2004@gmail.com</a>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <span class="text-xl">💬</span>
+            <span>Line ID: <strong>ppkaw075</strong></span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <span class="text-xl">🗺</span>
+            <a href="https://maps.app.goo.gl/R6XF6vDPd2WkYS9h6" target="_blank" rel="noopener" style="color:#6B7B8E;" class="hover:underline">ดูแผนที่ Google Maps</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Maps embed -->
+      <div class="warm-card overflow-hidden fade-in">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.8745!2d139.8437!3d36.5997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM1JzU4LjkiTiAxMznCsDUwJzM3LjMiRQ!5e0!3m2!1sth!2sth!4v1234567890"
+          width="100%" height="300"
+          style="border:0; display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="p-4 text-center">
+          <a href="https://maps.app.goo.gl/R6XF6vDPd2WkYS9h6" target="_blank" rel="noopener"
+             class="text-sm font-semibold" style="color:#6B7B8E;">
+            🗺 เปิดใน Google Maps →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 91: ช่องทางร่วมบุญ ===== -->
+<section data-section-id="91" class="py-16 px-4" style="background: linear-gradient(135deg, #4e2d2d, #6B7B8E);">
+  <div class="max-w-xl mx-auto text-center">
+    <div class="mb-6 fade-in">
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">ช่องทางร่วมบุญ</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="warm-card p-8 fade-in">
+      <div class="text-4xl mb-4">🙏</div>
+      <p class="text-gray-600 mb-6">ขออนุโมทนาบุญกับทุกท่านที่ร่วมสนับสนุนวัดพระธรรมกายโทชิหงิ</p>
+      <div class="text-left bg-gray-50 rounded-2xl p-5 space-y-3 text-sm mb-5">
+        <div class="flex items-center gap-3">
+          <span class="text-xl">🏦</span>
+          <div>
+            <div class="text-xs text-gray-500">ธนาคาร</div>
+            <div class="font-semibold" style="color:#4e2d2d;">ออมสิน (สาขาคลองหลวง)</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-xl">👤</span>
+          <div>
+            <div class="text-xs text-gray-500">ชื่อบัญชี</div>
+            <div class="font-semibold" style="color:#4e2d2d;">Wat Phra Dhammakaya Tochigi</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-xl">🔢</span>
+          <div>
+            <div class="text-xs text-gray-500">เลขที่บัญชี</div>
+            <div class="font-bold text-lg" style="color:#4e2d2d;">020-4-79246-363</div>
+          </div>
+        </div>
+      </div>
+      <p class="text-sm text-gray-500">สาธุ 🙏 ขออนุโมทนาสาธุการในบุญกุศลของทุกท่าน</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer pt-12 pb-6 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" alt="Logo" class="h-16 mb-3" />
+        <div class="text-lg font-bold text-yellow-400">วัดพระธรรมกายโทชิหงิ</div>
+        <div class="text-sm text-gray-300">タンマガーイ寺院栃木別院</div>
+        <div class="text-sm text-gray-400 mt-1">Wat Phra Dhammakaya Tochigi</div>
+      </div>
+      <div>
+        <h4 class="text-base font-bold text-yellow-400 mb-3">ติดต่อวัด</h4>
+        <div class="space-y-2 text-sm text-gray-300">
+          <div>📍 1068 Oya-machi, Utsunomiya-shi, Tochigi-ken, Japan 321-0345</div>
+          <div>📞 <a href="tel:+81286528701">(+81) 28-652-8701</a></div>
+          <div>✉️ <a href="mailto:dimc.tochigi2004@gmail.com">dimc.tochigi2004@gmail.com</a></div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-base font-bold text-yellow-400 mb-3">ช่องทางติดตาม</h4>
+        <div class="space-y-2 text-sm">
+          <div><a href="https://maps.app.goo.gl/R6XF6vDPd2WkYS9h6" target="_blank" rel="noopener">🗺 Google Maps</a></div>
+          <div><a href="https://www.youtube.com/@jeabmy123" target="_blank" rel="noopener">▶️ YouTube</a></div>
+          <div><a href="#" class="text-gray-400">📘 Facebook: วัดพระธรรมกายโทชิหงิ</a></div>
+        </div>
+        <div class="mt-4 text-sm font-medium">
+          <a href="index.html" class="mr-4">หน้าแรก</a>
+          <a href="about.html" class="mr-4">เกี่ยวกับวัด</a>
+          <a href="ordination.html">สมัครบวช</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-amber-900/50 pt-4 text-center text-xs text-gray-500">
+      © 2567 วัดพระธรรมกายโทชิหงิ — Wat Phra Dhammakaya Tochigi. สงวนลิขสิทธิ์.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+
+  // Fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.10 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
