@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>วัดพระธรรมกายโทชิหงิ — หน้าแรก</title>
+  <meta name="description" content="ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" />
+  <link rel="apple-touch-icon" href="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="วัดพระธรรมกายโทชิหงิ — หน้าแรก" />
+  <meta property="og:description" content="ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ" />
+  <meta property="og:image" content="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/banner_6_193.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="th_TH" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="วัดพระธรรมกายโทชิหงิ — หน้าแรก" />
+  <meta name="twitter:description" content="ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ" />
+  <meta name="twitter:image" content="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/banner_6_193.jpg" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#6B7B8E" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    * { font-family: 'Sarabun', sans-serif; }
+    :root {
+      --primary: #6B7B8E;
+      --secondary: #E0E7ED;
+      --accent: #DAA520;
+      --dark: #4e2d2d;
+    }
+    html { scroll-behavior: smooth; }
+
+    /* Navbar */
+    .navbar { background: rgba(78,45,45,0.95); backdrop-filter: blur(8px); }
+    .nav-link { color: #E0E7ED; transition: color 0.2s; }
+    .nav-link:hover { color: #DAA520; }
+    .nav-active { color: #DAA520; border-bottom: 2px solid #DAA520; }
+
+    /* Hero */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      background-image: url('https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/banner_6_193.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(78,45,45,0.55) 0%, rgba(30,20,20,0.75) 100%);
+    }
+    .hero-content { position: relative; z-index: 1; text-align: center; padding: 2rem; }
+
+    /* Timeline */
+    .timeline-item { position: relative; padding-left: 2.5rem; margin-bottom: 3rem; }
+    .timeline-item::before {
+      content: '';
+      position: absolute; left: 0; top: 0.5rem;
+      width: 1rem; height: 1rem;
+      border-radius: 50%;
+      background: #DAA520;
+      box-shadow: 0 0 0 4px rgba(218,165,32,0.2);
+    }
+    .timeline-item::after {
+      content: '';
+      position: absolute; left: 0.45rem; top: 1.5rem;
+      width: 2px; bottom: -2rem;
+      background: linear-gradient(to bottom, #DAA520, rgba(218,165,32,0.1));
+    }
+    .timeline-item:last-child::after { display: none; }
+
+    /* Image gallery grid */
+    .img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.5rem; }
+    .img-grid img { width: 100%; height: 120px; object-fit: cover; border-radius: 0.75rem; transition: transform 0.2s; }
+    .img-grid img:hover { transform: scale(1.03); }
+
+    /* Scroll fade-in */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* CTA buttons */
+    .btn-gold {
+      background: #DAA520; color: #4e2d2d;
+      padding: 0.85rem 2rem; border-radius: 9999px;
+      font-weight: 700; font-size: 1rem;
+      transition: background 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+    .btn-gold:hover { background: #c49318; transform: translateY(-2px); }
+    .btn-outline {
+      border: 2px solid #E0E7ED; color: #E0E7ED;
+      padding: 0.85rem 2rem; border-radius: 9999px;
+      font-weight: 600; font-size: 1rem;
+      transition: all 0.2s; display: inline-block;
+    }
+    .btn-outline:hover { background: rgba(224,231,237,0.15); transform: translateY(-2px); }
+
+    /* Section decorative divider */
+    .section-divider {
+      width: 64px; height: 4px; border-radius: 2px;
+      background: linear-gradient(to right, #DAA520, #6B7B8E);
+      margin: 0.75rem auto 0;
+    }
+
+    /* Card */
+    .warm-card {
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 24px rgba(78,45,45,0.08);
+      transition: box-shadow 0.2s, transform 0.2s;
+      overflow: hidden;
+    }
+    .warm-card:hover { box-shadow: 0 8px 32px rgba(78,45,45,0.13); transform: translateY(-3px); }
+
+    /* Footer */
+    .footer { background: #4e2d2d; color: #E0E7ED; }
+    .footer a { color: #DAA520; transition: opacity 0.2s; }
+    .footer a:hover { opacity: 0.8; }
+  </style>
+</head>
+<body style="background:#FDF8F2; color:#4e2d2d;">
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar fixed top-0 left-0 right-0 z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png"
+           alt="Logo วัดพระธรรมกายโทชิหงิ" class="h-12 w-auto" />
+      <div class="hidden sm:block">
+        <div class="text-sm font-bold text-yellow-400 leading-tight">วัดพระธรรมกายโทชิหงิ</div>
+        <div class="text-xs text-gray-300">タンマガーイ寺院栃木別院</div>
+      </div>
+    </a>
+    <!-- Desktop menu -->
+    <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
+      <a href="index.html" class="nav-link nav-active pb-0.5">หน้าแรก</a>
+      <a href="about.html" class="nav-link">เกี่ยวกับวัด</a>
+      <a href="ordination.html" class="nav-link">สมัครบวช</a>
+    </div>
+    <!-- Mobile menu toggle -->
+    <button id="menuBtn" class="md:hidden text-white focus:outline-none">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-amber-900/95 border-t border-yellow-800">
+    <div class="flex flex-col px-4 py-3 gap-3 text-sm font-semibold">
+      <a href="index.html" class="nav-link nav-active">หน้าแรก</a>
+      <a href="about.html" class="nav-link">เกี่ยวกับวัด</a>
+      <a href="ordination.html" class="nav-link">สมัครบวช</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section data-section-id="81" class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content max-w-3xl mx-auto">
+    <div class="mb-3">
+      <span class="inline-block bg-yellow-500/20 border border-yellow-400/40 text-yellow-300 text-xs px-3 py-1 rounded-full tracking-widest">
+        ☸ ศูนย์ปฏิบัติธรรม
+      </span>
+    </div>
+    <h1 class="text-4xl md:text-6xl font-bold text-white mb-2 leading-tight">
+      วัดพระธรรมกายโทชิหงิ
+    </h1>
+    <p class="text-lg md:text-xl text-yellow-300 font-medium mb-1">
+      タンマガーイ寺院栃木別院
+    </p>
+    <p class="text-base md:text-lg text-gray-300 mb-4 font-light">
+      Wat Phra Dhammakaya Tochigi
+    </p>
+    <p class="text-base md:text-xl text-gray-200 mb-10 max-w-lg mx-auto leading-relaxed">
+      ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="about.html" class="btn-gold">🏛 เยี่ยมชมวัด</a>
+      <a href="ordination.html" class="btn-outline">🙏 ร่วมทำบุญ</a>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="mt-16 animate-bounce text-yellow-400/70 text-2xl">↓</div>
+  </div>
+</section>
+
+<!-- ===== SECTION 82: TIMELINE ประวัติวัด ===== -->
+<section data-section-id="82" class="py-20 px-4">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-14 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold" style="color:#4e2d2d;">ประวัติวัดพระธรรมกายโทชิหงิ</h2>
+      <div class="section-divider"></div>
+      <p class="mt-4 text-gray-600 max-w-xl mx-auto">เรื่องราวสองทศวรรษแห่งการปักหลักพระพุทธศาสนาเถรวาทในแดนอาทิตย์อุทัย จากห้องเช่าเล็กๆ สู่วัดที่มีอุโบสถหินโอยะหลังแรกของโลก</p>
+    </div>
+    <div class="relative">
+      <!-- Timeline item 1 -->
+      <div class="timeline-item fade-in">
+        <div class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#6B7B8E;">พ.ศ. 2547</div>
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">จุดเริ่มต้น</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">วัดพระธรรมกายโทชิหงิก่อตั้งขึ้นเมื่อวันที่ 4 เมษายน พ.ศ. 2547 ณ เมืองอิมะอิจิ (今市) อำเภอนิกโก้ (日光市) จังหวัดโทชิหงิ (栃木県) โดยใช้ชื่อว่า "วัดภาวนาโทชิหงิ" เริ่มจากบ้านเช่า 2 ชั้นขนาดเล็ก เพื่อเป็นศูนย์รวมจิตใจของชาวพุทธในภูมิภาคคันโต</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948600_0_6_177.jpg" alt="จุดเริ่มต้น 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948599_0_6_178.jpg" alt="จุดเริ่มต้น 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948601_0_6_179.jpg" alt="จุดเริ่มต้น 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948588_0_6_180.jpg" alt="จุดเริ่มต้น 4" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948589_0_6_181.jpg" alt="จุดเริ่มต้น 5" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948590_0_6_182.jpg" alt="จุดเริ่มต้น 6" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Timeline item 2 -->
+      <div class="timeline-item fade-in">
+        <div class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#6B7B8E;">พ.ศ. 2548</div>
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">ย้ายสู่ใจกลางเมือง</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">วัดย้ายมาเช่าอาคาร 3 ชั้น ณ ใจกลางเมืองอุทสึโนมิยะ (宇都宮市) เมืองหลวงของจังหวัดโทชิหงิ เมื่อวันที่ 15 พฤษภาคม พ.ศ. 2548 เพื่อให้ญาติโยมเดินทางมาทำบุญได้สะดวกขึ้น</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948629_6_184.jpg" alt="ย้ายสู่ใจกลางเมือง 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948593_0_6_185.jpg" alt="ย้ายสู่ใจกลางเมือง 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948632_0_6_186.jpg" alt="ย้ายสู่ใจกลางเมือง 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948631_0_6_187.jpg" alt="ย้ายสู่ใจกลางเมือง 4" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Timeline item 3 -->
+      <div class="timeline-item fade-in">
+        <div class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#6B7B8E;">พ.ศ. 2550</div>
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">ปักหลักถาวร</h3>
+        <p class="text-gray-700 leading-relaxed">จัดซื้อที่ดินขนาด 6,000 ตารางเมตร ณ ตำบลโอยะ (大谷町) เมืองอุทสึโนมิยะ จัดพิธีเปิดเมื่อ 9 กันยายน พ.ศ. 2550 เปลี่ยนชื่อเป็น "วัดพระธรรมกายโทชิหงิ" ตั้งอยู่ในย่านหินโอยะอันมีชื่อเสียง ล้อมรอบด้วยธรรมชาติสงบร่มเย็น</p>
+      </div>
+
+      <!-- Timeline item 4 -->
+      <div class="timeline-item fade-in">
+        <div class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#6B7B8E;">พ.ศ. 2561</div>
+        <h3 class="text-xl font-bold mb-2" style="color:#4e2d2d;">ก้าวสู่การสร้างศาสนทายาท</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">วัดเริ่มจัดพิธีอุปสมบทอย่างเป็นทางการ โดยใช้พื้นที่กลางแจ้งชั่วคราวเป็นเขตพัทธสีมา ถือเป็นก้าวแรกของการสร้างศาสนทายาทในญี่ปุ่น ด้วยปรัชญา "โดยชาวท้องถิ่น เพื่อชาวท้องถิ่น สู่ชาวท้องถิ่น"</p>
+        <div class="img-grid">
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/481975906_949168367413229_1111905412964778921_n_6_188.jpg" alt="สร้างศาสนทายาท 1" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/490705379_975758834754182_8593984890039767146_n_6_189.jpg" alt="สร้างศาสนทายาท 2" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_12_6_190.jpg" alt="สร้างศาสนทายาท 3" loading="lazy" />
+          <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA8778_6_191.jpg" alt="สร้างศาสนทายาท 4" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 93: VDO Fullwidth ===== -->
+<section data-section-id="93" class="py-16 px-4" style="background:#E0E7ED;">
+  <div class="max-w-5xl mx-auto fade-in">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl md:text-3xl font-bold" style="color:#4e2d2d;">🎬 วิดีโอวัดพระธรรมกายโทชิหงิ</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="rounded-3xl overflow-hidden shadow-2xl" style="position:relative; padding-bottom:56.25%; height:0;">
+      <iframe
+        style="position:absolute; top:0; left:0; width:100%; height:100%;"
+        src="https://www.youtube.com/embed/P1brPTmou5Y"
+        title="11TH TOCHIGI MV"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 83: วิสัยทัศน์ ===== -->
+<section data-section-id="83" class="py-20 px-4">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold" style="color:#4e2d2d;">วิสัยทัศน์: การสร้างศาสนทายาทในแดนอาทิตย์อุทัย</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="fade-in mb-10 text-gray-700 text-lg leading-relaxed">
+      <p>ด้วยมโนปณิธานของพระมงคลเทพมุนี (สด จนฺทสโร) และพระครูบาไชยบูลย์ ธมฺมชโย (หลวงพ่อธัมมชโย) ในการขยายพระสัทธรรมของพระสัมมาสัมพุทธเจ้า ให้สันติสุขภายในบังเกิดขึ้นและนำไปสู่สันติภาพภายนอก วัดพระธรรมกายโทชิหงิมุ่งสร้างศาสนทายาทชาวญี่ปุ่น เพื่อให้พระพุทธศาสนาหยั่งรากลึกในแผ่นดินอาทิตย์อุทัยอย่างยั่งยืน</p>
+    </div>
+
+    <!-- Quote block -->
+    <div class="warm-card p-8 mb-10 fade-in" style="border-left: 5px solid #DAA520; background: linear-gradient(135deg, #FDF8F2, #fff);">
+      <div class="text-4xl text-yellow-400 mb-2">"</div>
+      <p class="text-xl md:text-2xl font-medium italic leading-relaxed" style="color:#4e2d2d;">
+        การสร้างโบสถ์ว่ายากแล้ว แต่การสร้างคนที่มีศรัทธาพร้อมจะบวชเป็นพระ ยากกว่าหลายเท่า
+      </p>
+    </div>
+
+    <div class="fade-in mb-10 text-gray-700 text-base leading-relaxed">
+      <h3 class="text-xl font-bold mb-3" style="color:#4e2d2d;">แบบอย่างพระโสณะและพระอุตตระ</h3>
+      <p class="mb-4">วิสัยทัศน์ของวัดมีรากฐานจากคุณูปการของพระโสณะและพระอุตตระ พระธรรมทูต 2 รูปที่พระเจ้าอโศกมหาราชส่งมาเผยแผ่พระศาสนาในสุวรรณภูมิ ซึ่งประสบความสำเร็จเพราะสร้าง "ศาสนทายาท" คือคนท้องถิ่นที่บวชเรียนและสืบทอดพระศาสนาต่อ</p>
+      <p>วัดพระธรรมกายโทชิหงิใช้ยุทธศาสตร์เดียวกัน — มุ่งเน้นการถ่ายโอนสายโลหิตแห่งธรรมไปยังชาวญี่ปุ่น ให้เกิดพระสงฆ์ท้องถิ่นที่สามารถเผยแผ่พระศาสนาเป็นภาษาญี่ปุ่นได้อย่างลึกซึ้งและยั่งยืน</p>
+    </div>
+
+    <div class="fade-in">
+      <h3 class="text-xl font-bold mb-4" style="color:#4e2d2d;">เครื่องมือสนับสนุนการเผยแผ่</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="warm-card p-5 flex items-start gap-3">
+          <span class="text-2xl">📜</span>
+          <div>
+            <div class="font-semibold" style="color:#4e2d2d;">พระไตรปิฎกบาลี (Pāḷi Tipiṭaka)</div>
+            <div class="text-gray-600 text-sm mt-1">เพื่อให้ชาวญี่ปุ่นเข้าถึงพระธรรมคำสอนจากแหล่งอ้างอิงชั้นปฐมภูมิ</div>
+          </div>
+        </div>
+        <div class="warm-card p-5 flex items-start gap-3">
+          <span class="text-2xl">🤝</span>
+          <div>
+            <div class="font-semibold" style="color:#4e2d2d;">การสอนแบบ Face-to-face Coaching</div>
+            <div class="text-gray-600 text-sm mt-1">การสร้างสัมพันธ์แบบครูกับศิษย์ตัวต่อตัว</div>
+          </div>
+        </div>
+        <div class="warm-card p-5 flex items-start gap-3">
+          <span class="text-2xl">🌟</span>
+          <div>
+            <div class="font-semibold" style="color:#4e2d2d;">หลักสูตร ความดีสากล 5 ประการ</div>
+            <div class="text-gray-600 text-sm mt-1">Universal Goodness 5 (UG5)</div>
+          </div>
+        </div>
+        <div class="warm-card p-5 flex items-start gap-3">
+          <span class="text-2xl">🗾</span>
+          <div>
+            <div class="font-semibold" style="color:#4e2d2d;">เครือข่ายฝึกอบรมแบบกระจายตัว</div>
+            <div class="text-gray-600 text-sm mt-1">ครอบคลุมกว่า 10 สาขาทั่วญี่ปุ่น</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer pt-12 pb-6 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <!-- Logo & name -->
+      <div>
+        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png"
+             alt="Logo" class="h-16 mb-3" />
+        <div class="text-lg font-bold text-yellow-400">วัดพระธรรมกายโทชิหงิ</div>
+        <div class="text-sm text-gray-300">タンマガーイ寺院栃木別院</div>
+        <div class="text-sm text-gray-400 mt-1">Wat Phra Dhammakaya Tochigi</div>
+        <p class="text-sm text-gray-400 mt-2">ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ</p>
+      </div>
+      <!-- Contact -->
+      <div>
+        <h4 class="text-base font-bold text-yellow-400 mb-3">ติดต่อวัด</h4>
+        <div class="space-y-2 text-sm text-gray-300">
+          <div>📍 1068 Oya-machi, Utsunomiya-shi, Tochigi-ken, Japan 321-0345</div>
+          <div>📞 <a href="tel:+81286528701">(+81) 28-652-8701</a></div>
+          <div>✉️ <a href="mailto:dimc.tochigi2004@gmail.com">dimc.tochigi2004@gmail.com</a></div>
+        </div>
+      </div>
+      <!-- Links -->
+      <div>
+        <h4 class="text-base font-bold text-yellow-400 mb-3">ช่องทางติดตาม</h4>
+        <div class="space-y-2 text-sm">
+          <div><a href="https://maps.app.goo.gl/R6XF6vDPd2WkYS9h6" target="_blank" rel="noopener">🗺 Google Maps</a></div>
+          <div><a href="https://www.youtube.com/@jeabmy123" target="_blank" rel="noopener">▶️ YouTube</a></div>
+          <div><a href="#" class="text-gray-400">📘 Facebook: วัดพระธรรมกายโทชิหงิ</a></div>
+        </div>
+        <div class="mt-4 text-sm font-medium">
+          <a href="index.html" class="mr-4">หน้าแรก</a>
+          <a href="about.html" class="mr-4">เกี่ยวกับวัด</a>
+          <a href="ordination.html">สมัครบวช</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-amber-900/50 pt-4 text-center text-xs text-gray-500">
+      © 2567 วัดพระธรรมกายโทชิหงิ — Wat Phra Dhammakaya Tochigi. สงวนลิขสิทธิ์.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  document.getElementById('menuBtn').addEventListener('click', function() {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+
+  // Scroll fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
