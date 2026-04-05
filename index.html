@@ -1,375 +1,502 @@
 <!DOCTYPE html>
-<html lang="th"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>วัดพระธรรมกายโทชิหงิ — หน้าแรก</title>
-  <meta name="description" content="ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png">
-  <link rel="apple-touch-icon" href="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="วัดพระธรรมกายโทชิหงิ — หน้าแรก">
-  <meta property="og:description" content="ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ">
-  <meta property="og:image" content="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/banner_6_193.jpg">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="วัดพระธรรมกายโทชิหงิ — หน้าแรก">
-  <meta name="twitter:description" content="ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ">
-  <meta name="twitter:image" content="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/banner_6_193.jpg">
-
-  <meta name="theme-color" content="#6B7B8E">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&amp;family=Noto+Serif+Thai:wght@400;600;700&amp;family=Noto+Serif+JP:wght@400;700&amp;display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #6B7B8E;
-      --accent: #DAA520;
-      --dark: #4b2502;
-      --secondary: #E0E7ED;
-    }
-    body { font-family: 'Sarabun', sans-serif; color: var(--dark); }
-    .font-serif { font-family: 'Noto Serif Thai', 'Noto Serif JP', serif; }
-    .text-primary { color: var(--primary); }
-    .text-accent { color: var(--accent); }
-    .text-dark { color: var(--dark); }
-    .bg-primary { background-color: var(--primary); }
-    .bg-accent { background-color: var(--accent); }
-    .bg-secondary { background-color: var(--secondary); }
-    .border-accent { border-color: var(--accent); }
-    .bg-dark { background-color: var(--dark); }
-
-    /* Timeline line */
-    .timeline-container::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(to bottom, transparent, var(--accent), transparent);
-    }
-
-    /* Fade in animation */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .fade-in { animation: fadeInUp 0.8s ease forwards; }
-
-    /* Scrollbar */
-    .scrollbar-thin::-webkit-scrollbar { height: 4px; }
-    .scrollbar-thin::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 2px; }
-    .scrollbar-thin::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
-
-    /* Hero overlay */
-    .hero-overlay {
-      background: linear-gradient(135deg, rgba(75,37,2,0.75) 0%, rgba(107,123,142,0.6) 100%);
-    }
-  </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-8{bottom:2rem}.left-1\/2{left:50%}.top-0{top:0px}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-auto{margin-left:auto}.mt-1{margin-top:0.25rem}.mt-16{margin-top:4rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:0.125rem}.h-12{height:3rem}.h-16{height:4rem}.h-24{height:6rem}.h-4{height:1rem}.h-48{height:12rem}.h-6{height:1.5rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-16{width:4rem}.w-24{width:6rem}.w-36{width:9rem}.w-4{width:1rem}.w-5\/12{width:41.666667%}.w-6{width:1.5rem}.w-auto{width:auto}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.flex-shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-stone-100{--tw-border-opacity:1;border-color:rgb(245 245 244 / var(--tw-border-opacity, 1))}.border-stone-50{--tw-border-opacity:1;border-color:rgb(250 250 249 / var(--tw-border-opacity, 1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/40{border-color:rgb(255 255 255 / 0.4)}.bg-stone-50{--tw-bg-opacity:1;background-color:rgb(250 250 249 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/15{background-color:rgb(255 255 255 / 0.15)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-6{padding:1.5rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-2{padding-bottom:0.5rem}.pb-8{padding-bottom:2rem}.pl-10{padding-left:2.5rem}.pl-6{padding-left:1.5rem}.pr-10{padding-right:2.5rem}.pt-16{padding-top:4rem}.pt-20{padding-top:5rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.text-right{text-align:right}.font-serif{font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.4em\]{letter-spacing:0.4em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/40{color:rgb(255 255 255 / 0.4)}.text-white\/50{color:rgb(255 255 255 / 0.5)}.text-white\/60{color:rgb(255 255 255 / 0.6)}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.opacity-90{opacity:0.9}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-white\/25:hover{background-color:rgb(255 255 255 / 0.25)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-8{bottom:2rem}.left-1\/2{left:50%}.top-0{top:0px}.bottom-0{bottom:0px}.left-0{left:0px}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-auto{margin-left:auto}.mt-1{margin-top:0.25rem}.mt-16{margin-top:4rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.ml-8{margin-left:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:0.125rem}.h-12{height:3rem}.h-16{height:4rem}.h-24{height:6rem}.h-4{height:1rem}.h-48{height:12rem}.h-6{height:1.5rem}.h-full{height:100%}.h-32{height:8rem}.h-40{height:10rem}.min-h-screen{min-height:100vh}.w-16{width:4rem}.w-24{width:6rem}.w-36{width:9rem}.w-4{width:1rem}.w-5\/12{width:41.666667%}.w-6{width:1.5rem}.w-auto{width:auto}.w-full{width:100%}.w-0\.5{width:0.125rem}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-stone-100{--tw-border-opacity:1;border-color:rgb(245 245 244 / var(--tw-border-opacity, 1))}.border-stone-50{--tw-border-opacity:1;border-color:rgb(250 250 249 / var(--tw-border-opacity, 1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/40{border-color:rgb(255 255 255 / 0.4)}.bg-stone-50{--tw-bg-opacity:1;background-color:rgb(250 250 249 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/15{background-color:rgb(255 255 255 / 0.15)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.pb-2{padding-bottom:0.5rem}.pb-8{padding-bottom:2rem}.pl-10{padding-left:2.5rem}.pl-6{padding-left:1.5rem}.pr-10{padding-right:2.5rem}.pt-16{padding-top:4rem}.pt-20{padding-top:5rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.text-right{text-align:right}.font-serif{font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.4em\]{letter-spacing:0.4em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/40{color:rgb(255 255 255 / 0.4)}.text-white\/50{color:rgb(255 255 255 / 0.5)}.text-white\/60{color:rgb(255 255 255 / 0.6)}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.opacity-90{opacity:0.9}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-white\/25:hover{background-color:rgb(255 255 255 / 0.25)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-0{bottom:0px}.bottom-8{bottom:2rem}.left-0{left:0px}.left-1\/2{left:50%}.top-0{top:0px}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-8{margin-left:2rem}.mt-1{margin-top:0.25rem}.mt-16{margin-top:4rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:0.125rem}.h-12{height:3rem}.h-16{height:4rem}.h-32{height:8rem}.h-40{height:10rem}.h-48{height:12rem}.h-6{height:1.5rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-0\.5{width:0.125rem}.w-16{width:4rem}.w-24{width:6rem}.w-6{width:1.5rem}.w-auto{width:auto}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-stone-100{--tw-border-opacity:1;border-color:rgb(245 245 244 / var(--tw-border-opacity, 1))}.border-stone-50{--tw-border-opacity:1;border-color:rgb(250 250 249 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/40{border-color:rgb(255 255 255 / 0.4)}.bg-stone-50{--tw-bg-opacity:1;background-color:rgb(250 250 249 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/15{background-color:rgb(255 255 255 / 0.15)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-8{padding-bottom:2rem}.pl-6{padding-left:1.5rem}.pt-16{padding-top:4rem}.pt-20{padding-top:5rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.font-serif{font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.4em\]{letter-spacing:0.4em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/40{color:rgb(255 255 255 / 0.4)}.text-white\/50{color:rgb(255 255 255 / 0.5)}.text-white\/60{color:rgb(255 255 255 / 0.6)}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.opacity-90{opacity:0.9}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-white\/25:hover{background-color:rgb(255 255 255 / 0.25)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-0{bottom:0px}.bottom-8{bottom:2rem}.left-0{left:0px}.left-1\/2{left:50%}.top-0{top:0px}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-8{margin-left:2rem}.mt-1{margin-top:0.25rem}.mt-16{margin-top:4rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:0.125rem}.h-12{height:3rem}.h-16{height:4rem}.h-32{height:8rem}.h-40{height:10rem}.h-48{height:12rem}.h-6{height:1.5rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-0\.5{width:0.125rem}.w-16{width:4rem}.w-24{width:6rem}.w-6{width:1.5rem}.w-auto{width:auto}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-stone-100{--tw-border-opacity:1;border-color:rgb(245 245 244 / var(--tw-border-opacity, 1))}.border-stone-50{--tw-border-opacity:1;border-color:rgb(250 250 249 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/40{border-color:rgb(255 255 255 / 0.4)}.bg-stone-50{--tw-bg-opacity:1;background-color:rgb(250 250 249 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/15{background-color:rgb(255 255 255 / 0.15)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-8{padding-bottom:2rem}.pl-6{padding-left:1.5rem}.pt-16{padding-top:4rem}.pt-20{padding-top:5rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.font-serif{font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.4em\]{letter-spacing:0.4em}.tracking-widest{letter-spacing:0.1em}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/40{color:rgb(255 255 255 / 0.4)}.text-white\/50{color:rgb(255 255 255 / 0.5)}.text-white\/60{color:rgb(255 255 255 / 0.6)}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.opacity-90{opacity:0.9}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-white\/25:hover{background-color:rgb(255 255 255 / 0.25)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}</style></head>
-<body class="bg-stone-50">
-
-
-<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-stone-100">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" alt="logo" class="h-12 w-auto object-contain">
-      <div>
-        <div class="text-dark font-serif text-base font-bold leading-tight">วัดพระธรรมกายโทชิหงิ</div>
-        <div class="text-primary text-xs">タンマガーイ寺院栃木別院</div>
-      </div>
-    </a>
-    <!-- Desktop menu -->
-    <div class="hidden md:flex items-center gap-8">
-      <a href="index.html" class="text-accent font-semibold transition-colors duration-300 text-sm uppercase tracking-widest">หน้าแรก</a>
-<a href="about.html" class="text-dark/70 hover:text-accent transition-colors duration-300 text-sm uppercase tracking-widest">เกี่ยวกับวัด</a>
-<a href="ordination.html" class="text-dark/70 hover:text-accent transition-colors duration-300 text-sm uppercase tracking-widest">สมัครบวช</a>
-
-      <a href="ordination.html" class="bg-accent text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-accent/90 transition-colors shadow-md">สมัครบวช</a>
-    </div>
-    <!-- Mobile menu button -->
-    <button id="menu-btn" class="md:hidden text-dark" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
-  </div>
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100 px-6 py-4 space-y-3">
-    <a href="index.html" class="block text-dark/70 hover:text-accent py-2 border-b border-stone-50">หน้าแรก</a><a href="about.html" class="block text-dark/70 hover:text-accent py-2 border-b border-stone-50">เกี่ยวกับวัด</a><a href="ordination.html" class="block text-dark/70 hover:text-accent py-2 border-b border-stone-50">สมัครบวช</a>
-    <a href="ordination.html" class="block bg-accent text-white text-center px-6 py-2 rounded-full font-semibold mt-2">สมัครบวช</a>
-  </div>
-</nav>
-
-<!-- ============ HERO ============ -->
-<section data-section-id="81" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20" data-section-index="0">
-  <!-- Background image -->
-  <div class="absolute inset-0 z-0">
-    <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/banner_6_193.jpg" alt="วัดพระธรรมกายโทชิหงิ" class="w-full h-full object-cover">
-    <div class="absolute inset-0 hero-overlay"></div>
-  </div>
-
-  <!-- Content -->
-  <div class="relative z-10 text-center px-6 max-w-5xl mx-auto py-24">
-    <p class="text-accent/90 text-sm uppercase tracking-[0.4em] mb-6 font-semibold">ยินดีต้อนรับสู่</p>
-    <h1 class="text-white font-serif text-5xl md:text-7xl font-bold leading-tight mb-3">
-      วัดพระธรรมกายโทชิหงิ
-    </h1>
-    <p class="text-white/80 text-2xl md:text-3xl mb-2 font-light">タンマガーイ寺院栃木別院</p>
-    <p class="text-white/70 text-xl mb-6 font-light">Wat Phra Dhammakaya Tochigi</p>
-    <div class="w-24 h-0.5 bg-accent mx-auto mb-8"></div>
-    <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-light">
-      ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ
-    </p>
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="about.html" class="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-semibold text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-        🏛️ เยี่ยมชมวัด
-      </a>
-      <a href="ordination.html" class="bg-white/15 hover:bg-white/25 text-white border border-white/40 px-10 py-4 rounded-full font-semibold text-base backdrop-blur-sm transition-all duration-300 hover:-translate-y-1">
-        🙏 ร่วมทำบุญ
-      </a>
-    </div>
-  </div>
-
-  <!-- Scroll indicator -->
-  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 animate-bounce">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-    </svg>
-  </div>
-</section>
-
-<!-- ============ HISTORY TIMELINE ============ -->
-<section data-section-id="82" class="py-20 bg-gradient-to-b from-white to-secondary/10" data-section-index="1">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <p class="text-accent text-xs uppercase tracking-[0.4em] mb-3 font-semibold">เรื่องราวของเรา</p>
-      <h2 class="text-dark font-serif text-4xl md:text-5xl font-bold mb-4">ประวัติวัดพระธรรมกายโทชิหงิ</h2>
-      <div class="w-16 h-0.5 bg-accent mx-auto mb-4"></div>
-      <p class="text-dark/60 max-w-2xl mx-auto">สองทศวรรษแห่งการปักหลักพระพุทธศาสนาเถรวาทในแดนอาทิตย์อุทัย จากห้องเช่าเล็กๆ สู่วัดที่มีอุโบสถหินโอยะหลังแรกของโลก</p>
-    </div>
-
-    <div class="relative">
-      <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent/20 via-accent to-accent/20 ml-8"></div>
-      
-      <div class="relative mb-16">
-        <div class="flex items-start" style="">
-          <div class="flex-shrink-0 w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white font-bold shadow-lg relative z-10">
-            <span class="text-sm">พ.ศ.2547</span>
-          </div>
-          <div class="ml-8 flex-1">
-            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-secondary/20">
-              
-              <h3 class="text-dark font-bold text-2xl mb-3 font-serif">จุดเริ่มต้น</h3>
-              <p class="text-dark/75 leading-relaxed mb-6">วัดพระธรรมกายโทชิหงิก่อตั้งขึ้นเมื่อวันที่ 4 เมษายน พ.ศ. 2547 ณ เมืองอิมะอิจิ (今市) อำเภอนิกโก้ (日光市) จังหวัดโทชิหงิ (栃木県) โดยใช้ชื่อว่า "วัดภาวนาโทชิหงิ" เริ่มจากบ้านเช่า 2 ชั้นขนาดเล็ก เพื่อเป็นศูนย์รวมจิตใจของชาวพุทธในภูมิภาคคันโต</p>
-              
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-4" style="">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948600_0_6_177.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948599_0_6_178.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948601_0_6_179.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948588_0_6_180.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948589_0_6_181.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948590_0_6_182.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="relative mb-16">
-        <div class="flex items-start" style="">
-          <div class="flex-shrink-0 w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white font-bold shadow-lg relative z-10">
-            <span class="text-sm">พ.ศ.2548</span>
-          </div>
-          <div class="ml-8 flex-1">
-            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-secondary/20">
-              
-              <h3 class="text-dark font-bold text-2xl mb-3 font-serif">ย้ายสู่ใจกลางเมือง</h3>
-              <p class="text-dark/75 leading-relaxed mb-6">วัดย้ายมาเช่าอาคาร 3 ชั้น ณ ใจกลางเมืองอุทสึโนมิยะ (宇都宮市) เมืองหลวงของจังหวัดโทชิหงิ เมื่อวันที่ 15 พฤษภาคม พ.ศ. 2548 เพื่อให้ญาติโยมเดินทางมาทำบุญได้สะดวกขึ้น</p>
-              
-              <div class="grid grid-cols-2 md:grid-cols-4 gap-4" style="">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948629_6_184.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948593_0_6_185.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948632_0_6_186.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948631_0_6_187.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="relative mb-16">
-        <div class="flex items-start" style="">
-          <div class="flex-shrink-0 w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white font-bold shadow-lg relative z-10">
-            <span class="text-sm">พ.ศ.2550</span>
-          </div>
-          <div class="ml-8 flex-1">
-            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-secondary/20">
-              
-              <h3 class="text-dark font-bold text-2xl mb-3 font-serif">ปักหลักถาวร</h3>
-              <p class="text-dark/75 leading-relaxed mb-6">จัดซื้อที่ดินขนาด 6,000 ตารางเมตร ณ ตำบลโอยะ (大谷町) เมืองอุทสึโนมิยะ จัดพิธีเปิดเมื่อ 9 กันยายน พ.ศ. 2550 เปลี่ยนชื่อเป็น "วัดพระธรรมกายโทชิหงิ" ตั้งอยู่ในย่านหินโอยะอันมีชื่อเสียง ล้อมรอบด้วยธรรมชาติสงบร่มเย็น</p>
-              
-              <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4" style="">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/481975906_949168367413229_1111905412964778921_n_6_194.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/490705379_975758834754182_8593984890039767146_n_6_195.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_12_6_196.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA8778_6_198.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_0981_6_199.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_20231127190215_0050_D_6_200.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA3005_6_201.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA3171_6_203.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA3238_6_204.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA3121_6_205.jpg" alt="" class="w-full h-32 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="relative">
-        <div class="flex items-start" style="">
-          <div class="flex-shrink-0 w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white font-bold shadow-lg relative z-10">
-            <span class="text-sm">พ.ศ.2561</span>
-          </div>
-          <div class="ml-8 flex-1">
-            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-secondary/20">
-              
-              <h3 class="text-dark font-bold text-2xl mb-3 font-serif">ก้าวสู่การสร้างศาสนทายาท</h3>
-              <p class="text-dark/75 leading-relaxed mb-6">วัดเริ่มจัดพิธีอุปสมบทอย่างเป็นทางการ โดยใช้พื้นที่กลางแจ้งชั่วคราวเป็นเขตพัทธสีมา ถือเป็นก้าวแรกของการสร้างศาสนทายาทในญี่ปุ่น ด้วยปรัชญา "โดยชาวท้องถิ่น เพื่อชาวท้องถิ่น สู่ชาวท้องถิ่น"</p>
-              
-              <div class="grid grid-cols-2 md:grid-cols-4 gap-4" style="">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_3_6_123.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_2023812_230813_577_6_127.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DSC08862_6_128.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_5_6_124.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670812__2_240814_577_6_120.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8089_6_115.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8345_6_116.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_20190817_260405_2_6_222.jpg" alt="" class="w-full h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VIDEO SECTION ============ -->
-<section data-section-id="93" class="py-16 bg-dark" data-section-index="2">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-10">
-      <p class="text-accent text-xs uppercase tracking-[0.4em] mb-3 font-semibold">ชมวีดิโอ</p>
-      <h2 class="text-white font-serif text-3xl font-bold">ภาพเก่าๆ ของวัดพระธรรมกายโทชิหงิ</h2>
-    </div>
-    <div class="relative rounded-2xl overflow-hidden shadow-2xl" style="padding-top: 56.25%;">
-      <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/P1brPTmou5Y" title="วัดพระธรรมกายโทชิหงิ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VISION SECTION ============ -->
-<section data-section-id="83" class="py-20 bg-white" data-section-index="3">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <p class="text-accent text-xs uppercase tracking-[0.4em] mb-3 font-semibold">วิสัยทัศน์</p>
-      <h2 class="text-dark font-serif text-4xl md:text-5xl font-bold">การสร้างศาสนทายาทในแดนอาทิตย์อุทัย</h2>
-      <div class="w-16 h-0.5 bg-accent mx-auto mt-4"></div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-      <div class="prose-content text-dark/80 leading-relaxed">
-        <p class="text-dark/70 leading-relaxed my-3">ด้วยมโนปณิธานของพระมงคลเทพมุนี (สด จนฺทสโร) และพระครูบาไชยบูลย์ ธมฺมชโย (หลวงพ่อธัมมชโย) ในการขยายพระสัทธรรมของพระสัมมาสัมพุทธเจ้า ให้สันติสุขภายในบังเกิดขึ้นและนำไปสู่สันติภาพภายนอก วัดพระธรรมกายโทชิหงิมุ่งสร้างศาสนทายาทชาวญี่ปุ่น เพื่อให้พระพุทธศาสนาหยั่งรากลึกในแผ่นดินอาทิตย์อุทัยอย่างยั่งยืน</p>
-<blockquote class="border-l-4 border-accent pl-6 py-2 italic text-dark/80 text-xl font-serif my-6">"การสร้างโบสถ์ว่ายากแล้ว แต่การสร้างคนที่มีศรัทธาพร้อมจะบวชเป็นพระ ยากกว่าหลายเท่า"</blockquote>
-<h4 class="text-dark font-bold text-lg mt-6 mb-2 font-serif">แบบอย่างพระโสณะและพระอุตตระ</h4>
-<p class="text-dark/70 leading-relaxed">วิสัยทัศน์ของวัดมีรากฐานจากคุณูปการของพระโสณะและพระอุตตระ พระธรรมทูต 2 รูปที่พระเจ้าอโศกมหาราชส่งมาเผยแผ่พระศาสนาในสุวรรณภูมิ ซึ่งประสบความสำเร็จเพราะสร้าง "ศาสนทายาท" คือคนท้องถิ่นที่บวชเรียนและสืบทอดพระศาสนาต่อ</p>
-<p class="text-dark/70 leading-relaxed my-3">วัดพระธรรมกายโทชิหงิใช้ยุทธศาสตร์เดียวกัน — มุ่งเน้นการถ่ายโอนสายโลหิตแห่งธรรมไปยังชาวญี่ปุ่น ให้เกิดพระสงฆ์ท้องถิ่นที่สามารถเผยแผ่พระศาสนาเป็นภาษาญี่ปุ่นได้อย่างลึกซึ้งและยั่งยืน</p>
-<ul class="space-y-2 my-4">
-<li class="flex items-start gap-2 text-dark/70"><span class="text-accent mt-1">◆</span><span>เครื่องมือสนับสนุนการเผยแผ่:</span></li>
-<li class="flex items-start gap-2 text-dark/70"><span class="text-accent mt-1">◆</span><span>พระไตรปิฎกบาลี (Pāḷi Tipiṭaka) — เพื่อให้ชาวญี่ปุ่นเข้าถึงพระธรรมคำสอนจากแหล่งอ้างอิงชั้นปฐมภูมิ</span></li>
-<li class="flex items-start gap-2 text-dark/70"><span class="text-accent mt-1">◆</span><span>การสอนแบบ Face-to-face Coaching — การสร้างสัมพันธ์แบบครูกับศิษย์ตัวต่อตัว</span></li>
-<li class="flex items-start gap-2 text-dark/70"><span class="text-accent mt-1">◆</span><span>หลักสูตร ความดีสากล 5 ประการ (Universal Goodness 5 หรือ UG5)</span></li>
-<li class="flex items-start gap-2 text-dark/70"><span class="text-accent mt-1">◆</span><span>เครือข่ายฝึกอบรมแบบกระจายตัว — ครอบคลุมกว่า 10 สาขาทั่วญี่ปุ่น</span></li>
-</ul>
-
-      </div>
-      <div>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วัดพระธรรมกายโทชิหงิ — หน้าแรก</title>
+    <meta property="og:image" content="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/banner_6_193.jpg">
+    <link rel="icon" href="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png">
+    <meta name="theme-color" content="#6B7B8E">
+    
+    <!-- Google Fonts - Sarabun -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { font-family: 'Sarabun', sans-serif; }
+        :root {
+            --color-primary: #6B7B8E;
+            --color-secondary: #E0E7ED;
+            --color-accent: #DAA520;
+            --color-dark: #4b2502;
+        }
         
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mt-8">
-      <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_125_6_206.jpg" alt="" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_135_6_207.jpg" alt="" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_294_6_209.jpg" alt="" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_425_6_210.jpg" alt="" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_596_6_211.jpg" alt="" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_598_6_212.jpg" alt="" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/670609-7_6_213.jpg" alt="" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/670609-1_6_214.jpg" alt="" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/565389400_1125382856458445_2512973923789882324_n_6_74.jpg" alt="" class="w-full h-48 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
-    </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA SECTION ============ -->
-<section class="py-20 bg-gradient-to-br from-primary/10 via-secondary to-accent/10" data-section-index="4">
-  <div class="max-w-4xl mx-auto text-center px-6">
-    <p class="text-accent text-xs uppercase tracking-[0.4em] mb-4 font-semibold">ร่วมเดินทางกับเรา</p>
-    <h2 class="text-dark font-serif text-4xl md:text-5xl font-bold mb-6">เริ่มต้นการปฏิบัติธรรม<br>ในแดนอาทิตย์อุทัย</h2>
-    <p class="text-dark/60 text-lg mb-10 max-w-2xl mx-auto">เปิดโอกาสให้ตัวเองได้สัมผัสความสงบ เรียนรู้พระธรรม และร่วมสร้างศาสนทายาทเพื่อพระพุทธศาสนาในญี่ปุ่น</p>
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="about.html" class="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-        เรียนรู้เพิ่มเติม
-      </a>
-      <a href="ordination.html" class="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-        สมัครบรรพชาอุปสมบท
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<footer class="bg-dark text-white/80 pt-16 pb-8 mt-16">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-      <div>
-        <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" alt="logo" class="h-16 w-auto object-contain mb-4 opacity-90">
-        <p class="text-white font-bold text-lg mb-1">วัดพระธรรมกายโทชิหงิ</p>
-        <p class="text-white/60 text-sm mb-1">タンマガーイ寺院栃木別院</p>
-        <p class="text-white/60 text-sm">Wat Phra Dhammakaya Tochigi</p>
-        <p class="text-white/50 text-xs mt-3 leading-relaxed">ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ</p>
-      </div>
-      <div>
-        <h4 class="text-accent font-semibold uppercase tracking-widest text-xs mb-4">ติดต่อเรา</h4>
-        <div class="space-y-2 text-sm text-white/70">
-          <p>📍 1068 Oya-machi, Utsunomiya-shi, Tochigi-ken, Japan 321-0345</p>
-          <p>📞 (+81) 28-652-8701</p>
-          <p>✉️ dimc.tochigi2004@gmail.com</p>
-          <p>📲 Line ID: ppkaw075</p>
+        html { scroll-behavior: smooth; }
+        
+        /* Fade-in animation on scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Navbar */
+        nav {
+            background-color: rgba(107, 123, 142, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Mobile menu */
+        #mobileMenu {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            #navLinks {
+                display: none;
+            }
+            #mobileMenu.active {
+                display: block;
+            }
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/banner_6_193.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--color-accent);
+        }
+        .timeline-item {
+            margin-bottom: 40px;
+            width: 45%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item:nth-child(odd) {
+            margin-left: 0;
+            text-align: right;
+        }
+        .timeline-item:nth-child(even) {
+            margin-left: 55%;
+            text-align: left;
+        }
+        .timeline-year {
+            color: var(--color-accent);
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .timeline-title {
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .timeline-description {
+            color: var(--color-dark);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 0;
+            }
+            .timeline-item {
+                width: 100%;
+            }
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                margin-left: 0;
+                text-align: left;
+            }
+        }
+        
+        /* Image gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 1;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #c49410;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(218, 165, 32, 0.3);
+        }
+        .btn-secondary {
+            background-color: var(--color-primary);
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #5a6877;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(107, 123, 142, 0.3);
+        }
+        
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Section title */
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 14px;
+            color: var(--color-accent);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        /* Donation card */
+        .donation-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+            border-left: 6px solid var(--color-accent);
+            border-radius: 12px;
+            padding: 32px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50" style="color: var(--color-dark);">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-6 py-4">
+        <a href="index.html" class="flex items-center gap-2">
+            <img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/logo_tochigi_golden_6_1.png" alt="Logo" class="h-12 w-12">
+            <span class="text-white font-bold text-lg hidden sm:inline">วัดพระธรรมกายโทชิหงิ</span>
+        </a>
+        
+        <div id="navLinks" class="hidden md:flex gap-8">
+            <a href="index.html" class="text-white font-500 hover:text-yellow-300 transition">หน้าแรก</a>
+            <a href="about.html" class="text-white font-500 hover:text-yellow-300 transition">เกี่ยวกับวัด</a>
+            <a href="ordination.html" class="text-white font-500 hover:text-yellow-300 transition">สมัครบวช</a>
         </div>
-      </div>
-      <div>
-        <h4 class="text-accent font-semibold uppercase tracking-widest text-xs mb-4">ช่องทางอื่นๆ</h4>
-        <div class="space-y-3 text-sm">
-          <a href="https://www.facebook.com/วัดพระธรรมกายโทชิหงิ" target="_blank" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors">
-            <span class="text-lg">📘</span> Facebook: วัดพระธรรมกายโทชิหงิ
-          </a>
-          <a href="https://www.youtube.com/@jeabmy123" target="_blank" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors">
-            <span class="text-lg">📺</span> YouTube Channel
-          </a>
-          <a href="https://maps.app.goo.gl/R6XF6vDPd2WkYS9h6" target="_blank" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors">
-            <span class="text-lg">🗺️</span> Google Maps
-          </a>
-          <a href="https://dmctochigi.org" target="_blank" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors">
-            <span class="text-lg">🌐</span> dmctochigi.org
-          </a>
+        
+        <button id="hamburgerBtn" class="md:hidden text-white text-2xl">☰</button>
+        
+        <div id="mobileMenu" class="absolute top-20 right-0 bg-gray-800 w-64 p-4 rounded-lg shadow-lg md:hidden">
+            <a href="index.html" class="block text-white py-2 hover:text-yellow-300">หน้าแรก</a>
+            <a href="about.html" class="block text-white py-2 hover:text-yellow-300">เกี่ยวกับวัด</a>
+            <a href="ordination.html" class="block text-white py-2 hover:text-yellow-300">สมัครบวช</a>
         </div>
-      </div>
-    </div>
-    <div class="border-t border-white/10 pt-6 text-center text-white/40 text-xs">
-      © 2567 วัดพระธรรมกายโทชิหงิ · 1068 Oya-machi, Utsunomiya-shi, Tochigi-ken, Japan 321-0345
-    </div>
-  </div>
-</footer>
-
-
-</body></html>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section data-section-id="1" class="hero">
+        <div class="text-center text-white fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">วัดพระธรรมกายโทชิหงิ</h1>
+            <p class="text-2xl md:text-3xl mb-2">タンマガーイ寺院栃木別院</p>
+            <p class="text-lg md:text-xl mb-8">Wat Phra Dhammakaya Tochigi</p>
+            <p class="text-base md:text-lg max-w-2xl mx-auto mb-12">ศูนย์ปฏิบัติธรรมแห่งความสงบ ใจกลางเมืองโอยะ จังหวัดโทชิหงิ</p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="about.html" class="btn btn-primary">เยี่ยมชมวัด</a>
+                <button onclick="document.querySelector('[data-section-id=\"5\"]').scrollIntoView();" class="btn btn-secondary">ร่วมทำบุญ</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Timeline Section -->
+    <section data-section-id="2" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="section-title fade-in">ประวัติวัดพระธรรมกายโทชิหงิ</h2>
+            <p class="section-subtitle fade-in">เรื่องราวสองทศวรรษแห่งการปักหลักพระพุทธศาสนาเถรวาทในแดนอาทิตย์อุทัย จากห้องเช่าเล็กๆ สู่วัดที่มีอุโบสถหินโอยะหลังแรกของโลก</p>
+            
+            <div class="timeline fade-in">
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">พ.ศ. 2547</div>
+                    <div class="timeline-title">จุดเริ่มต้น</div>
+                    <div class="timeline-description">วัดพระธรรมกายโทชิหงิก่อตั้งขึ้นเมื่อวันที่ 4 เมษายน พ.ศ. 2547 ณ เมืองอิมะอิจิ อำเภอนิกโก้ จังหวัดโทชิหงิ โดยใช้ชื่อว่า "วัดภาวนาโทชิหงิ" เริ่มจากบ้านเช่า 2 ชั้นขนาดเล็ก เพื่อเป็นศูนย์รวมจิตใจของชาวพุทธในภูมิภาคคันโต</div>
+                    <div class="image-gallery">
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948600_0_6_177.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948599_0_6_178.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948601_0_6_179.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948588_0_6_180.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948589_0_6_181.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948590_0_6_182.jpg" alt="Gallery"></div>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">พ.ศ. 2548</div>
+                    <div class="timeline-title">ย้ายสู่ใจกลางเมือง</div>
+                    <div class="timeline-description">วัดย้ายมาเช่าอาคาร 3 ชั้น ณ ใจกลางเมืองอุทสึโนมิยะ เมืองหลวงของจังหวัดโทชิหงิ เมื่อวันที่ 15 พฤษภาคม พ.ศ. 2548 เพื่อให้ญาติโยมเดินทางมาทำบุญได้สะดวกขึ้น</div>
+                    <div class="image-gallery">
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948629_6_184.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948593_0_6_185.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948632_0_6_186.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/S__3948631_0_6_187.jpg" alt="Gallery"></div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">พ.ศ. 2550</div>
+                    <div class="timeline-title">ปักหลักถาวร</div>
+                    <div class="timeline-description">จัดซื้อที่ดินขนาด 6,000 ตารางเมตร ณ ตำบลโอยะ เมืองอุทสึโนมิยะ จัดพิธีเปิดเมื่อ 9 กันยายน พ.ศ. 2550 เปลี่ยนชื่อเป็น "วัดพระธรรมกายโทชิหงิ" ตั้งอยู่ในย่านหินโอยะอันมีชื่อเสียง ล้อมรอบด้วยธรรมชาติสงบร่มเย็น</div>
+                    <div class="image-gallery">
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/481975906_949168367413229_1111905412964778921_n_6_194.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/490705379_975758834754182_8593984890039767146_n_6_195.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_12_6_196.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA8778_6_198.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_0981_6_199.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DJI_20231127190215_0050_D_6_200.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA3005_6_201.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA3171_6_203.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA3238_6_204.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PANA3121_6_205.jpg" alt="Gallery"></div>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">พ.ศ. 2561</div>
+                    <div class="timeline-title">ก้าวสู่การสร้างศาสนทายาท</div>
+                    <div class="timeline-description">วัดเริ่มจัดพิธีอุปสมบทอย่างเป็นทางการ โดยใช้พื้นที่กลางแจ้งชั่วคราวเป็นเขตพัทธสีมา ถือเป็นก้าวแรกของการสร้างศาสนทายาทในญี่ปุ่น ด้วยปรัชญา "โดยชาวท้องถิ่น เพื่อชาวท้องถิ่น สู่ชาวท้องถิ่น"</div>
+                    <div class="image-gallery">
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_3_6_123.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_2023812_230813_577_6_127.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/DSC08862_6_128.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM__260401_5_6_124.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_670812__2_240814_577_6_120.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8089_6_115.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/PURI8345_6_116.jpg" alt="Gallery"></div>
+                        <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_20190817_260405_2_6_222.jpg" alt="Gallery"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- YouTube Section -->
+    <section data-section-id="3" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="fade-in">
+                <div class="aspect-video rounded-xl overflow-hidden shadow-xl">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/P1brPTmou5Y" title="11TH TOCHIGI MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Vision Section -->
+    <section data-section-id="4" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="section-title fade-in">วิสัยทัศน์: การสร้างศาสนทายาทในแดนอาทิตย์อุทัย</h2>
+            <p class="section-subtitle fade-in">แสดงวิสัยทัศน์ของวัดอย่างสง่างาม มี quote เด่น รายการเครื่องมือเผยแผ่ และภาพประกอบ layout น่าอ่าน สร้างแรงบันดาลใจ</p>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center fade-in">
+                <div>
+                    <p class="text-lg leading-relaxed mb-6" style="color: var(--color-dark);">
+                        ด้วยมโนปณิธานของพระมงคลเทพมุนี (สด จนฺทสโร) และพระครูบาไชยบูลย์ ธมฺมชโย (หลวงพ่อธัมมชโย) ในการขยายพระสัทธรรมของพระสัมมาสัมพุทธเจ้า ให้สันติสุขภายในบังเกิดขึ้นและนำไปสู่สันติภาพภายนอก วัดพระธรรมกายโทชิหงิมุ่งสร้างศาสนทายาทชาวญี่ปุ่น เพื่อให้พระพุทธศาสนาหยั่งรากลึกในแผ่นดินอาทิตย์อุทัยอย่างยั่งยืน
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold mb-4" style="color: var(--color-primary);">เครื่องมือสำคัญในการเผยแผ่:</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <span style="color: var(--color-accent);" class="font-bold text-lg">•</span>
+                            <span>การจัดอบรมสมาธิ (Meditation Retreat)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span style="color: var(--color-accent);" class="font-bold text-lg">•</span>
+                            <span>การสอนในมหาวิทยาลัย (University Teaching)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span style="color: var(--color-accent);" class="font-bold text-lg">•</span>
+                            <span>กิจกรรมวัฒนธรรม (Cultural Activities)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span style="color: var(--color-accent);" class="font-bold text-lg">•</span>
+                            <span>สื่อออนไลน์และ Social Media</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span style="color: var(--color-accent);" class="font-bold text-lg">•</span>
+                            <span>กิจกรรมชุมชน (Community Events)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span style="color: var(--color-accent);" class="font-bold text-lg">•</span>
+                            <span>การบรรพชาอุปสมบทหมู่ (Mass Ordination)</span>
+                        </li>
+                    </ul>
+                    
+                    <p class="text-lg font-bold" style="color: var(--color-accent);">
+                        เป้าหมาย: สร้างศาสนทายาทชาวญี่ปุ่น 1,000 รูป ภายใน พ.ศ. 2600
+                    </p>
+                </div>
+                
+                <div class="image-gallery">
+                    <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_125_6_206.jpg" alt="Vision"></div>
+                    <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_135_6_207.jpg" alt="Vision"></div>
+                    <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_294_6_209.jpg" alt="Vision"></div>
+                    <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_425_6_210.jpg" alt="Vision"></div>
+                    <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_596_6_211.jpg" alt="Vision"></div>
+                    <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/LINE_ALBUM_671011____240814_598_6_212.jpg" alt="Vision"></div>
+                    <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/670609-7_6_213.jpg" alt="Vision"></div>
+                    <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/670609-1_6_214.jpg" alt="Vision"></div>
+                    <div class="gallery-item"><img src="https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/565389400_1125382856458445_2512973923789882324_n_6_74.jpg" alt="Vision"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Donation Section -->
+    <section data-section-id="5" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="section-title fade-in">ช่องทางร่วมบุญ</h2>
+            
+            <div class="donation-card fade-in">
+                <h3 class="text-2xl font-bold mb-6" style="color: var(--color-primary);">ธนาคารออมสิน</h3>
+                <div class="space-y-4">
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">สาขา</p>
+                        <p class="text-lg font-600">คลองหลวง</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">ชื่อบัญชี</p>
+                        <p class="text-lg font-600">Wat Phra Dhammakaya Tochigi</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600 mb-1">เลขบัญชี</p>
+                        <p class="text-2xl font-bold" style="color: var(--color-accent);">020-4-79246-363</p>
+                    </div>
+                </div>
+                <p class="text-base mt-8 leading-relaxed" style="color: var(--color-dark);">
+                    ขออนุโมทนาบุญกับทุกท่านที่ร่วมสนับสนุนวัดพระธรรมกายโทชิหงิ
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6" style="color: var(--color-accent);">วัดพระธรรมกายโทชิหงิ</h3>
+                    <p class="mb-4">タンマガーイ寺院栃木別院</p>
+                    <address class="not-italic text-gray-300 mb-6">
+                        1068 Oya-machi, Utsunomiya-shi, Tochigi-ken, Japan 321-0345
+                    </address>
+                    <p class="mb-2">Phone: <a href="tel:+81286528701" class="hover:text-yellow-400">(+81) 28-652-8701</a></p>
+                    <p>Email: <a href="mailto:dimc.tochigi2004@gmail.com" class="hover:text-yellow-400">dimc.tochigi2004@gmail.com</a></p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6" style="color: var(--color-accent);">Follow Us</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://www.youtube.com/@jeabmy123" target="_blank" class="hover:text-yellow-400">YouTube</a></li>
+                        <li><a href="https://maps.app.goo.gl/R6XF6vDPd2WkYS9h6" target="_blank" class="hover:text-yellow-400">Google Maps</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Facebook: วัดพระธรรมกายโทชิหงิ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <p class="text-center text-gray-400">
+                    Copyright 2567 - วัดพระธรรมกายโทชิหงิ (Wat Phra Dhammakaya Tochigi) | All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Intersection Observer for fade-in animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
