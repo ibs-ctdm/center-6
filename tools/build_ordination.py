@@ -5,7 +5,7 @@
 
 ได้ไฟล์ ordination.html (ไทย) และ ja/ordination.html (ญี่ปุ่น)
 ข้อความหลัก กำหนดการ และรายชื่อวัด ผู้ดูแลแก้ได้เองที่หน้าผู้ดูแล
-(https://ordination.meisounomori.jp/admin/) — หน้าเว็บโหลดค่าล่าสุดจาก API ทับข้อความตั้งต้นในไฟล์นี้
+(https://dmctochigi-ordination.ctdm-ibs.workers.dev/admin/) — หน้าเว็บโหลดค่าล่าสุดจาก API ทับข้อความตั้งต้นในไฟล์นี้
 แก้ไฟล์นี้เฉพาะเมื่อจะเปลี่ยนโครงหน้า ป้ายของฟอร์ม หรือข้อความที่ไม่ได้อยู่ในหน้าผู้ดูแล
 """
 from html import escape
@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSET_VER = "1"
-API_BASE = "https://ordination.meisounomori.jp"
+API_BASE = "https://dmctochigi-ordination.ctdm-ibs.workers.dev"
 R2 = "https://pub-a71ab4f1880d46c9ba975e0786421c77.r2.dev/projects/6/images/"
 LOGO = R2 + "logo_tochigi_golden_6_1.png"
 HERO = R2 + "25670811-12_80_084_6_147.jpg"
